@@ -2,6 +2,7 @@ import os
 import io
 import base64
 
+
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 
@@ -16,6 +17,9 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 # Création d'un logger
 logger = logging.getLogger(__name__)
+
+logger.info(f"Current working dir: {os.getcwd()}")
+# print("Files in models:", os.listdir("models"))
 
 
 # ---------------- Config ----------------
