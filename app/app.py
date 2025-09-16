@@ -16,6 +16,9 @@ logging.basicConfig(level=logging.DEBUG)
 # Création d'un logger
 logger = logging.getLogger(__name__)
 
+
+os.environ["KERAS_BACKEND"] = "torch"
+
 # ---------------- Config ----------------
 UPLOAD_FOLDER = "static/uploads"
 ALLOWED_EXT = {"png", "jpg", "jpeg", "webp"}
