@@ -46,6 +46,12 @@ def allowed_file(filename: str) -> bool:
         >>> allowed_file("archive.tar.gz")
         False
     """
+    logger.info(f"input passé dans allowed_file : {allowed_file}")
+    if "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT == True:
+        logger.info(f"""Resultat de la ligne "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
+    else:
+        logger.info(f"""Le type de fichier n'est pas autorisé : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
+    
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT
 
 

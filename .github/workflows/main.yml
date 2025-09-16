@@ -1,0 +1,27 @@
+name: My Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tests_job:
+    runs-on: ubuntu-latest
+    steps:
+      # Étape pour récupérer le code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Étape pour installer Python et les dépendances si nécessaire
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Étape pour exécuter les tests
+      - name: Run tests
+        run: pytest -vv
