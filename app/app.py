@@ -146,11 +146,13 @@ def predict():
     raw = file.read()
     pil_img = Image.open(io.BytesIO(raw))
     img_array = preprocess_from_pil(pil_img)
+    logger.info(f"type(img_array) ={type(img_array)})")
 
     probs = model.predict(img_array, verbose=0)[0]
     cls_idx = int(np.argmax(probs))
     label = CLASSES[cls_idx]
     conf = float(probs[cls_idx])
+
 
     image_data_url = to_data_url(pil_img, fmt="JPEG")
 
