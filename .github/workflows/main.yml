@@ -14,11 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Étape pour installer Python et les dépendances si nécessaire
+      # Étape pour installer Python et activer le cache pip
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: 'pip'  # ← cache activé pour pip
+
+      # Étape pour installer les dépendances
       - name: Install dependencies
         run: pip install -r requirements.txt
 
