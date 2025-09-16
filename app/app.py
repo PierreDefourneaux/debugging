@@ -95,6 +95,8 @@ def preprocess_from_pil(pil_img: Image.Image) -> np.ndarray:
         np.ndarray de forme (1, H, W, 3), dtype float32, valeurs ∈ [0, 1].
     """
     img = pil_img.convert("RGB")
+    # REDIMENSIONER !!!!
+    img = img.resize((224, 224), Image.Resampling.LANCZOS)
     img_array = np.asarray(img, dtype=np.float32) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
     return img_array
@@ -144,7 +146,7 @@ def predict():
     img_array = preprocess_from_pil(pil_img)
     
     logger.info(f"Type de img_array ={type(img_array)})")
-    logger.info(f"Shape de img_array ={img_array.shape()}")
+    logger.info(f"Shape de img_array ={img_array.shape}")
     probs = model.predict(img_array, verbose=0)[0]
     cls_idx = int(np.argmax(probs))
     label = CLASSES[cls_idx]

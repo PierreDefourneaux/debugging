@@ -14,7 +14,21 @@ def client():
 def test_code200(client):
     response = client.get("/")
     assert response.status_code == 200
+    
+# S'assurer que le bug de format ne se répète plus et soit bien adapté à celui attendu par keras
+def test_format_img_():
+    from app import preprocess_from_pil
+    from PIL import Image
+    import numpy as np
+    import random
+    
+    n1 = random.randint(1, 1000)
+    n2 = random.randint(1, 1000)
 
+    dummy_img = Image.new("RGB", (n1, n2), color="red")
+    arr = preprocess_from_pil(dummy_img)
+
+    assert arr.shape == (1, 224, 224, 3)
 
 
 
