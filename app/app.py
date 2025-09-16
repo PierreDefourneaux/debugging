@@ -54,11 +54,7 @@ def allowed_file(filename: str) -> bool:
         False
     """
     logger.info(f"input passé dans allowed_file : {allowed_file}")
-    if "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT == True:
-        logger.info(f"""Resultat de la ligne "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
-    else:
-        logger.info(f"""Le type de fichier n'est pas autorisé : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
-    
+    logger.info(f"""allowed_file : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT
 
 
@@ -146,8 +142,9 @@ def predict():
     raw = file.read()
     pil_img = Image.open(io.BytesIO(raw))
     img_array = preprocess_from_pil(pil_img)
-    logger.info(f"type(img_array) ={type(img_array)})")
-
+    
+    logger.info(f"Type de img_array ={type(img_array)})")
+    logger.info(f"Shape de img_array ={img_array.shape()}")
     probs = model.predict(img_array, verbose=0)[0]
     cls_idx = int(np.argmax(probs))
     label = CLASSES[cls_idx]
