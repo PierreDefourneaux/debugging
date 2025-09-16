@@ -18,9 +18,9 @@ logging.basicConfig(level=logging.DEBUG)
 # Création d'un logger
 logger = logging.getLogger(__name__)
 
-logger.info(f"logger Current working dir: {os.getcwd()}")
 print(f"print Current working dir: {os.getcwd()}")
-print("Files in models:", os.listdir("models"))
+for file in os.listdir():
+    print("file dans le dossier :",file)
 
 
 # ---------------- Config ----------------
