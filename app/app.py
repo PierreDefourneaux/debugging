@@ -31,7 +31,7 @@ CLASSES = ['desert', 'forest', 'meadow', 'mountain']
 app = Flask(__name__)
 
 # ---------------- Model ----------------
-MODEL_PATH = "models/final_cnn.keras"
+MODEL_PATH = "app/models/final_cnn.keras"
 model = keras.saving.load_model(MODEL_PATH, compile=False)
 
 # ---------------- Utils ----------------
