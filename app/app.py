@@ -6,6 +6,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 
 import numpy as np
+os.environ["KERAS_BACKEND"] = "torch"
 import keras
 
 from PIL import Image
@@ -16,8 +17,6 @@ logging.basicConfig(level=logging.DEBUG)
 # Création d'un logger
 logger = logging.getLogger(__name__)
 
-
-os.environ["KERAS_BACKEND"] = "torch"
 
 # ---------------- Config ----------------
 UPLOAD_FOLDER = "static/uploads"
