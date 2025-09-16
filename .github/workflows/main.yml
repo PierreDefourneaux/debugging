@@ -10,21 +10,29 @@ jobs:
   tests_job:
     runs-on: ubuntu-latest
     steps:
-      # Étape pour récupérer le code
+      # Récupération du code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Étape pour installer Python et activer le cache pip
+      # Installer Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'  # ← cache activé pour pip
 
-      # Étape pour installer les dépendances
+      # --- Cache pip ---
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # Installer les dépendances
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Étape pour exécuter les tests
+      # Exécuter les tests
       - name: Run tests
         run: pytest -vv
