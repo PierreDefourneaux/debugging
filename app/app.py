@@ -14,11 +14,24 @@ import keras
 from PIL import Image
 
 import logging
-# Configuration de base du logging
-logging.basicConfig(level=logging.DEBUG)
-# Création d'un logger
+
+LOG_DIR = os.path.join(os.path.dirname(__file__), "log")
+LOG_FILE = os.path.join(LOG_DIR, "app.log")
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILE, encoding="utf-8"),  # Écrit dans log/app.log
+        logging.StreamHandler()  # Continue d'afficher dans la console (stdout/stderr)
+    ]
+)
+
 logger = logging.getLogger(__name__)
 
+logger.info("Logger configuré avec succès")
+
+
+# prints pour affichage dans github actions
 print(f"print Current working dir: {os.getcwd()}")
 for file in os.listdir():
     print("file dans le dossier :",file)
@@ -96,7 +109,7 @@ def preprocess_from_pil(pil_img: Image.Image) -> np.ndarray:
         np.ndarray de forme (1, H, W, 3), dtype float32, valeurs ∈ [0, 1].
     """
     img = pil_img.convert("RGB")
-    # REDIMENSIONER !!!!
+    # REDIMENSIONER ICI
     img = img.resize((224, 224), Image.Resampling.LANCZOS)
     img_array = np.asarray(img, dtype=np.float32) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
