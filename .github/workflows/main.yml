@@ -38,3 +38,12 @@ jobs:
       # Exécuter les tests
       - name: Run tests
         run: pytest -vv
+
+  deploy_job:
+      needs: tests_job # ne se lance que si tests_job a réussi
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+        - name: Deploy
+          run: echo "Déploiement ici..."

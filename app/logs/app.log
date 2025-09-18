@@ -1,0 +1,985 @@
+2025-09-17 16:57:13,263 [INFO] __main__: Logger configuré avec succès
+2025-09-17 16:57:13,995 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-17 16:57:13,996 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-17 16:57:13,996 [INFO] werkzeug:  * Restarting with stat
+2025-09-17 16:57:16,891 [INFO] __main__: Logger configuré avec succès
+2025-09-17 16:57:17,278 [WARNING] werkzeug:  * Debugger is active!
+2025-09-17 16:57:17,297 [INFO] werkzeug:  * Debugger PIN: 596-891-276
+2025-09-18 10:33:35,956 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 10:33:35,958 [CRITICAL] __main__: Ceci est un test CRITICAL pour cevoir un mail
+2025-09-18 10:33:38,556 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 10:33:38,556 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 10:33:38,558 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 10:33:41,335 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 10:33:41,335 [CRITICAL] __main__: Ceci est un test CRITICAL pour cevoir un mail
+2025-09-18 10:33:43,313 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 10:33:43,374 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 11:07:01,616 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 11:07:04,013 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 11:07:09,823 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 11:07:09,823 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 11:07:12,202 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 11:07:12,213 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 11:09:04,607 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 11:09:06,816 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 11:09:12,530 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 11:09:12,531 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 11:09:23,970 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 11:09:23,971 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 11:09:26,854 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 11:09:26,854 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 11:09:26,855 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 11:09:29,727 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 11:09:29,727 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 11:09:31,711 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 11:09:31,765 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 11:09:37,435 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 11:09:37] "GET / HTTP/1.1" 200 -
+2025-09-18 11:10:00,519 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7658e3310d60>
+2025-09-18 11:10:00,520 [INFO] __main__: allowed_file : True
+2025-09-18 11:10:00,553 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 11:10:00,553 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 11:10:02,045 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 11:10:02] "POST /predict HTTP/1.1" 200 -
+2025-09-18 11:10:23,906 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 11:10:23] "GET /feedback HTTP/1.1" 200 -
+2025-09-18 11:10:26,307 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 11:10:26] "GET / HTTP/1.1" 200 -
+2025-09-18 11:25:15,976 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 11:25:18,501 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 11:25:24,908 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 11:25:24,909 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 11:25:27,035 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 11:25:27,043 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 11:25:27,057 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 11:25:54,525 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7f41e854cd60>
+2025-09-18 11:25:54,525 [INFO] __main__: allowed_file : True
+2025-09-18 11:25:54,592 [DEBUG] PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-18 11:25:54,593 [DEBUG] PIL.TiffImagePlugin: tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-18 11:25:54,593 [DEBUG] PIL.TiffImagePlugin: tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-18 11:25:54,593 [DEBUG] PIL.TiffImagePlugin: tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-18 11:25:54,593 [DEBUG] PIL.TiffImagePlugin: tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: b'Adobe Photoshop CS5 Windows\x00'
+2025-09-18 11:25:54,594 [DEBUG] PIL.TiffImagePlugin: tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 142 - value: b'2015:07:15 14:18:34\x00'
+2025-09-18 11:25:54,594 [DEBUG] PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa4'
+2025-09-18 11:25:54,616 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 11:25:54,616 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 11:25:55,556 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 11:25:55] "POST /predict HTTP/1.1" 200 -
+2025-09-18 12:02:42,817 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:02:42] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2025-09-18 12:02:42,961 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:02:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-18 12:02:50,619 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 12:02:53,239 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 12:03:00,131 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:03:00,131 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:03:03,040 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:03:03,040 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:03:03,041 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:03:03,687 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 12:03:03,700 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 12:03:03,734 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:03] "[32mGET /dashboard HTTP/1.1[0m" 308 -
+2025-09-18 12:03:03,740 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:03] "[32mGET /dashboard/ HTTP/1.1[0m" 302 -
+2025-09-18 12:03:03,755 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:03] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:03:04,098 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:04] "GET /dashboard/static/css/main.css HTTP/1.1" 200 -
+2025-09-18 12:03:04,100 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:04] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+2025-09-18 12:03:04,102 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:04] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+2025-09-18 12:03:04,104 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:04] "GET /dashboard/static/css/prism.css HTTP/1.1" 200 -
+2025-09-18 12:03:04,341 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:04] "GET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2025-09-18 12:03:04,866 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:04] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+2025-09-18 12:03:05,176 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:03:05] "GET /dashboard/static/img/favicon.ico HTTP/1.1" 200 -
+2025-09-18 12:04:30,879 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:30] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:04:30,924 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:30] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:04:30,924 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:30] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:04:31,230 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:31] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 12:04:31,234 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:31] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:04:31,261 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:31] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:04:31,622 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:31] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:04:31,626 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:31] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:04:44,437 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:44] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+2025-09-18 12:04:44,744 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:04:44] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:08:35,779 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 12:08:35,780 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 12:08:35,780 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:08:35,780 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:08:37,045 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 12:08:39,905 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:08:39,905 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:08:42,627 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:08:42,627 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:08:42,628 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:08:43,267 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 12:08:43,312 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 12:09:49,527 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 12:09:49,528 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 12:09:49,528 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:09:49,528 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:09:50,268 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 12:09:53,231 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:09:53,231 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:09:55,219 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:09:55,220 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:09:55,225 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:09:55,644 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 12:09:55,646 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 12:10:27,990 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:27] "[32mGET /dashboard HTTP/1.1[0m" 308 -
+2025-09-18 12:10:28,001 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "[32mGET /dashboard/ HTTP/1.1[0m" 302 -
+2025-09-18 12:10:28,036 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:10:28,073 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/css/main.css HTTP/1.1" 200 -
+2025-09-18 12:10:28,079 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/css/prism.css HTTP/1.1" 200 -
+2025-09-18 12:10:28,084 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+2025-09-18 12:10:28,088 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+2025-09-18 12:10:28,118 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2025-09-18 12:10:28,968 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+2025-09-18 12:10:28,996 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:28] "GET /dashboard/static/img/favicon.ico HTTP/1.1" 200 -
+2025-09-18 12:10:35,657 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:10:35,689 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:10:35,692 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:10:35,696 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:10:35,698 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:10:35,735 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 12:10:35,829 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:35] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:10:46,054 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:46] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:10:46,081 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:46] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:10:46,086 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:46] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:10:46,088 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:46] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:10:46,092 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:46] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:10:46,152 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:10:46] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:11:02,876 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 12:11:02,877 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 12:11:02,877 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:11:02,877 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:11:03,688 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 12:11:18,149 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:11:18,150 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:11:20,205 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:11:20,206 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:11:20,206 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:11:20,973 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 12:11:20,974 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 12:11:20,974 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 12:11:24,032 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:11:24,032 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:11:26,049 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:11:26,050 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:11:26,055 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:11:26,430 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 12:11:26,432 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 12:11:26,463 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+2025-09-18 12:11:26,482 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:11:26,526 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:11:26,527 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:11:26,532 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:11:26,532 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:11:26,602 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:11:26,604 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:11:26,625 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:26] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-18 12:11:35,103 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:11:35,131 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:11:35,135 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:11:35,142 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:11:35,143 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:11:35,168 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 12:11:35,244 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:11:35] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:22:08,831 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+2025-09-18 12:22:08,852 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:22:08,893 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:22:08,904 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:22:08,908 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:22:08,916 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:22:08,944 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:08] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 12:22:09,209 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:09] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:22:09,218 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:09] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-18 12:22:16,045 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:22:16,078 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:22:16,082 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:22:16,083 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:22:16,087 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:22:16,153 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 12:22:16,193 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:22:16] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:22:27,888 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 12:22:27,889 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:22:27,890 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:22:28,122 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 12:22:28,123 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:22:28,123 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:22:35,580 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:22:35,580 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:22:37,874 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:22:37,875 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:22:37,875 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:22:38,247 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 12:22:38,247 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 12:22:38,248 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 12:22:40,891 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 12:22:40,891 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 12:22:42,808 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 12:22:42,808 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 12:22:42,809 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 12:22:43,163 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 12:22:43,183 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 12:23:08,230 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:08] "GET / HTTP/1.1" 200 -
+2025-09-18 12:23:14,053 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[32mGET /dashboard/ HTTP/1.1[0m" 302 -
+2025-09-18 12:23:14,073 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:23:14,138 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:23:14,141 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:23:14,142 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:23:14,143 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:23:14,174 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 12:23:14,274 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:14] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 12:23:23,848 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:23] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 12:23:23,892 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:23] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 12:23:23,901 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:23] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 12:23:23,905 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:23] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 12:23:23,908 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:23] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 12:23:23,946 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 12:23:23] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 13:36:52,537 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "[32mPOST /dashboard/login HTTP/1.1[0m" 302 -
+2025-09-18 13:36:52,557 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 13:36:52,611 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 13:36:52,616 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 13:36:52,619 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/static/js/prism.js HTTP/1.1" 200 -
+2025-09-18 13:36:52,621 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 13:36:52,665 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 13:36:52,803 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/static/elements/modal.html HTTP/1.1" 200 -
+2025-09-18 13:36:52,803 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/static/elements/menu.html HTTP/1.1" 200 -
+2025-09-18 13:36:52,811 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 13:36:52,879 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 13:36:52,914 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/static/pages/telemetry.html HTTP/1.1" 200 -
+2025-09-18 13:36:52,924 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/static/elements/pagination.html HTTP/1.1" 200 -
+2025-09-18 13:36:52,942 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 13:36:52,962 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:52] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 13:36:53,094 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:36:53] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 13:39:20,126 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:39:20] "GET /dashboard/static/pages/plotly_graph.html HTTP/1.1" 200 -
+2025-09-18 13:39:20,148 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:39:20] "GET /dashboard/static/elements/endpointDetails.html HTTP/1.1" 200 -
+2025-09-18 13:39:20,154 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:39:20] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 13:39:20,169 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:39:20] "GET /dashboard/static/elements/monitorLevel.html HTTP/1.1" 200 -
+2025-09-18 13:42:25,539 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:25] "GET / HTTP/1.1" 200 -
+2025-09-18 13:42:33,745 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x72c62f7dbba0>
+2025-09-18 13:42:33,745 [INFO] __main__: allowed_file : True
+2025-09-18 13:42:33,773 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 13:42:33,781 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 13:42:33,781 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 13:42:34,412 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:34] "POST /predict HTTP/1.1" 200 -
+2025-09-18 13:42:42,923 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:42] "GET /dashboard/hourly_load HTTP/1.1" 200 -
+2025-09-18 13:42:42,960 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:42] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 13:42:42,966 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:42] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 13:42:42,974 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:42] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 13:42:42,975 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:42] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,010 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,122 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,124 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,125 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/pages/plotly_graph.html HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,144 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,156 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 13:42:43,171 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/elements/endpointDetails.html HTTP/1.1[0m" 304 -
+2025-09-18 13:42:43,175 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 13:42:43,189 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:43] "[36mGET /dashboard/static/elements/monitorLevel.html HTTP/1.1[0m" 304 -
+2025-09-18 13:42:55,805 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:55] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 13:42:57,773 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:42:57] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 13:44:13,224 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:13] "GET /dashboard/static/pages/exception_overview.html HTTP/1.1" 200 -
+2025-09-18 13:44:13,243 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:13] "GET /dashboard/api/num_exceptions HTTP/1.1" 200 -
+2025-09-18 13:44:13,243 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:13] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 13:44:13,268 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:13] "GET /dashboard/api/exception_occurrence/0/5 HTTP/1.1" 200 -
+2025-09-18 13:44:16,972 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:16] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 13:44:17,004 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:17] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 13:44:17,032 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:17] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 13:44:17,038 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:17] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 13:44:17,043 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:17] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 13:44:17,057 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:17] "GET /dashboard/api/exception_occurrence/0/10 HTTP/1.1" 200 -
+2025-09-18 13:44:19,289 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:19] "[35m[1mPOST /dashboard/telemetry/accept_telemetry_consent HTTP/1.1[0m" 204 -
+2025-09-18 13:44:21,019 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 13:44:21,361 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 13:44:21,366 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:44:21,664 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:44:21,668 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:21] "GET /dashboard/api/num_exceptions HTTP/1.1" 200 -
+2025-09-18 13:44:21,674 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:44:21,950 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:44:21,954 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:21] "GET /dashboard/api/exception_occurrence/0/5 HTTP/1.1" 200 -
+2025-09-18 13:44:22,117 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:44:22,122 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:22] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 13:44:22,124 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:44:22,392 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:44:22,401 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:44:22,408 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:22] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 13:44:22,416 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:22] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 13:44:22,421 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:44:22,693 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:44:22,695 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:22] "GET /dashboard/api/exception_occurrence/0/10 HTTP/1.1" 200 -
+2025-09-18 13:44:39,234 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:44:39,518 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:44:39,527 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:39] "GET /dashboard/api/requests/2025-09-08/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 13:44:55,372 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:44:55] "GET / HTTP/1.1" 200 -
+2025-09-18 13:45:01,062 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x72c62f7dbba0>
+2025-09-18 13:45:01,062 [INFO] __main__: allowed_file : True
+2025-09-18 13:45:01,064 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 13:45:01,066 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 13:45:01,067 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 13:45:01,128 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:01] "POST /predict HTTP/1.1" 200 -
+2025-09-18 13:45:10,276 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 13:45:10,331 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,338 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,346 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,347 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,409 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,498 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,503 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,513 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,569 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:45:10,616 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,616 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:45:10,617 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:10,622 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:45:10,640 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 13:45:10,846 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:45:10,851 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 13:45:10,894 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:45:10,903 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 13:45:10,905 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:45:10,913 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:10] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 13:45:35,472 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:35] "[36mGET /dashboard/static/pages/plotly_graph.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:35,490 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:45:35,493 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:35] "[36mGET /dashboard/static/elements/endpointDetails.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:35,518 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:35] "[36mGET /dashboard/static/elements/monitorLevel.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:35,766 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:45:35,774 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:35] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 13:45:41,040 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:41] "[36mGET /dashboard/static/pages/exception_overview.html HTTP/1.1[0m" 304 -
+2025-09-18 13:45:41,063 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:45:41,336 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:45:41,342 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:41] "GET /dashboard/api/num_exceptions HTTP/1.1" 200 -
+2025-09-18 13:45:41,357 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 13:45:41,632 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 13:45:41,633 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 13:45:41] "GET /dashboard/api/exception_occurrence/0/5 HTTP/1.1" 200 -
+2025-09-18 13:48:12,929 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 13:48:12,929 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 13:48:12,929 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 13:48:12,930 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 13:48:14,620 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 13:48:18,887 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 13:48:18,887 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 13:48:21,396 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 13:48:21,397 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 13:48:21,397 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 13:48:21,464 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 13:48:21,464 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 13:48:21,464 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 13:48:22,297 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 13:48:22,298 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 13:48:22,298 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 13:48:33,158 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 13:48:33,159 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 13:48:35,285 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 13:48:35,286 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 13:48:35,286 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 13:48:35,336 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 13:48:35,336 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 13:48:35,336 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:03:33,072 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:03:33,072 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:03:35,499 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:03:35,500 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:03:35,505 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:03:36,142 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:03:36,142 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 14:03:36,142 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:03:39,287 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:03:39,287 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:03:41,623 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:03:41,624 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:03:41,629 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:03:42,120 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:03:42,147 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 14:03:42,181 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:42] "GET / HTTP/1.1" 200 -
+2025-09-18 14:03:48,313 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 14:03:48,367 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,369 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,371 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,377 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,413 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,546 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,556 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,559 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,583 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 14:03:48,616 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,624 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 14:03:48,643 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:48] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 14:03:48,653 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:03:48,785 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:03:48,870 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:03:48,872 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:03:48,892 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:03:48,893 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:03:49,163 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 14:03:49,166 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:03:49,168 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:03:49,180 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:49] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 14:03:49,446 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:03:49,453 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:03:49] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 14:04:15,067 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:04:15] "GET /dashboard/static/pages/configuration.html HTTP/1.1" 200 -
+2025-09-18 14:04:15,097 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:04:15,102 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:04:15,104 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:04:15] "GET /dashboard/api/users HTTP/1.1" 200 -
+2025-09-18 14:04:15,105 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:04:15] "GET /dashboard/telemetry/get_is_telemetry_accepted HTTP/1.1" 200 -
+2025-09-18 14:04:15,376 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:04:15,379 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:04:15] "GET /dashboard/api/deploy_config HTTP/1.1" 200 -
+2025-09-18 14:04:15,392 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:04:15,399 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:04:15] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 14:08:52,527 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 14:08:52,528 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 14:08:52,528 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:08:52,528 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:08:53,889 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:08:58,158 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:08:58,158 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:08:59,540 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:09:00,370 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:09:00,371 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:09:00,371 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:09:00,795 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:09:00,805 [INFO] werkzeug:  * Debugger PIN: 125-867-928
+2025-09-18 14:14:00,514 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:14:00,514 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:14:02,046 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:14:02,984 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:14:02,985 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:14:02,985 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:14:03,499 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:14:03,499 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 14:14:03,500 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:14:06,762 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:14:06,762 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:14:08,024 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:14:08,670 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:14:08,670 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:14:08,676 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:14:09,096 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:14:09,116 [INFO] werkzeug:  * Debugger PIN: 109-648-718
+2025-09-18 14:14:09,158 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:09] "GET / HTTP/1.1" 200 -
+2025-09-18 14:14:09,262 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-18 14:14:19,304 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7ddbb9517ba0>
+2025-09-18 14:14:19,304 [INFO] __main__: allowed_file : True
+2025-09-18 14:14:19,324 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 14:14:19,331 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 14:14:19,331 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 14:14:19,928 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:19] "POST /predict HTTP/1.1" 200 -
+2025-09-18 14:14:37,277 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[32mGET /dashboard/ HTTP/1.1[0m" 302 -
+2025-09-18 14:14:37,299 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:14:37,373 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:14:37,374 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:14:37,374 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:14:37,376 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:14:37,427 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:14:37,621 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:37] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:14:48,258 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:14:48,289 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:14:48,299 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:14:48,303 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:14:48,306 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:14:48,326 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:14:48,391 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:14:48] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:15:01,671 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:15:01] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:15:01,696 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:15:01] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:15:01,704 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:15:01] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:15:01,706 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:15:01] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:15:01,707 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:15:01] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:15:01,745 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:15:01] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:16:13,839 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:16:13,840 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:16:15,151 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:16:15,764 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:16:15,764 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:16:15,770 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:16:16,186 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:16:16,186 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 14:16:16,186 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:16:19,311 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:16:19,311 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:16:20,530 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:16:21,123 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:16:21,124 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:16:21,124 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:16:21,497 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:16:21,498 [INFO] werkzeug:  * Debugger PIN: 109-648-718
+2025-09-18 14:17:04,782 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 14:17:04,783 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 14:17:04,783 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:17:04,783 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:17:06,058 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:17:09,172 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:17:19,199 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:17:19,199 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:17:20,430 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:17:21,014 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:17:21,015 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:17:21,020 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:17:21,444 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:17:21,444 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 14:17:21,445 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:17:24,392 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:17:24,392 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:17:25,571 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:17:26,134 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:17:26,134 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:17:26,140 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:17:26,524 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:17:26,525 [INFO] werkzeug:  * Debugger PIN: 109-648-718
+2025-09-18 14:17:58,456 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:17:58] "GET / HTTP/1.1" 200 -
+2025-09-18 14:18:05,444 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[32mGET /dashboard/ HTTP/1.1[0m" 302 -
+2025-09-18 14:18:05,470 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:18:05,490 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:18:05,493 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:18:05,494 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:18:05,519 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:18:05,604 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:18:05,690 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:05] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:16,727 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:16] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:18:16,768 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:16] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:18:16,770 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:16] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:18:16,775 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:16] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:18:16,777 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:16] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:18:16,826 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:16] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,552 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[32mPOST /dashboard/login HTTP/1.1[0m" 302 -
+2025-09-18 14:18:18,558 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 14:18:18,603 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,606 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,607 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,608 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,697 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,702 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,703 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,739 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,748 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 14:18:18,748 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 14:18:18,772 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:18:18,776 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:18:18,788 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:18] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 14:18:19,049 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:18:19,052 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:18:19,053 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:18:19,055 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:18:19,342 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 14:18:19,344 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:18:19,347 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:18:19,350 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:19] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 14:18:19,622 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:18:19,630 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:18:19] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 14:22:15,493 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 14:22:15,493 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 14:22:15,494 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:22:15,494 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:22:16,267 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:22:19,227 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:22:19,227 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:22:21,157 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:22:21,159 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:22:21,769 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:22:21,769 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:22:21,775 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:22:22,183 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:22:22,185 [INFO] werkzeug:  * Debugger PIN: 109-648-718
+2025-09-18 14:38:14,508 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:14] "GET / HTTP/1.1" 200 -
+2025-09-18 14:38:22,460 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 14:38:22,509 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,511 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,512 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,516 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,548 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,774 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,775 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,795 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,827 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 14:38:22,865 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,870 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:22,892 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:22] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 14:38:22,902 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:38:23,063 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:38:23,172 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:38:23,175 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:38:23,176 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:38:23,180 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:38:23,459 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 14:38:23,460 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:38:23,461 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:38:23,464 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:23] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 14:38:23,736 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:38:23,744 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:23] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 14:38:30,515 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:30] "[36mGET /dashboard/static/pages/plotly_graph.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:30,534 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:30] "[36mGET /dashboard/static/elements/endpointDetails.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:30,539 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:38:30,562 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:30] "[36mGET /dashboard/static/elements/monitorLevel.html HTTP/1.1[0m" 304 -
+2025-09-18 14:38:30,819 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:38:30,823 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:30] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 14:38:35,710 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:38:35,993 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:38:36,000 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:36] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 14:38:37,710 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:38:38,000 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:38:38,004 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:38:38] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 14:39:25,257 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 14:39:25,258 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 14:39:25,258 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:39:25,258 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:39:26,717 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:42:27,246 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:42:27,247 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:42:29,129 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:42:29,132 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:42:54,419 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:42:54,419 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:42:56,262 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:42:56,263 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:44:30,382 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:44:30,382 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:44:31,853 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:44:31,855 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:44:32,900 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:44:32,900 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:44:32,911 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:44:33,401 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:44:33,401 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 14:44:33,402 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:44:36,750 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:44:36,750 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:44:38,453 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:44:38,457 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:44:39,067 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:44:39,068 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:44:39,073 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:44:39,455 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:44:39,476 [INFO] werkzeug:  * Debugger PIN: 109-648-718
+2025-09-18 14:44:59,917 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:44:59] "GET / HTTP/1.1" 200 -
+2025-09-18 14:45:04,074 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 14:45:04,110 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,115 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,117 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,143 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,374 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,418 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,419 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,421 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,446 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 14:45:04,480 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,481 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 14:45:04,505 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 14:45:04,505 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:04] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 14:45:04,507 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 14:45:04,780 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 14:45:04,782 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:45:05,078 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 14:45:05,079 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:45:05,371 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:45:05,380 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:05] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 14:45:15,628 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:15] "[36mGET /dashboard/static/pages/configuration.html HTTP/1.1[0m" 304 -
+2025-09-18 14:45:15,661 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:45:15,664 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:15] "GET /dashboard/api/users HTTP/1.1" 200 -
+2025-09-18 14:45:15,666 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 14:45:15,677 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:15] "GET /dashboard/telemetry/get_is_telemetry_accepted HTTP/1.1" 200 -
+2025-09-18 14:45:15,949 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:45:15,951 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:15] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 14:45:15,952 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 14:45:15,953 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:45:15] "GET /dashboard/api/deploy_config HTTP/1.1" 200 -
+2025-09-18 14:56:50,636 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:56:50,637 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:56:52,807 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:56:52,811 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:56:53,792 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:56:53,792 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:56:53,792 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:56:54,295 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 14:56:54,295 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 14:56:54,296 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 14:56:57,496 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 14:56:57,496 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 14:56:59,017 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 14:56:59,018 [INFO] __main__: PATH EXIST ?True
+2025-09-18 14:56:59,726 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 14:56:59,726 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 14:56:59,726 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 14:57:00,193 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 14:57:00,223 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 14:57:14,669 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:14] "GET / HTTP/1.1" 200 -
+2025-09-18 14:57:14,765 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-18 14:57:34,370 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7f0e9264bba0>
+2025-09-18 14:57:34,370 [INFO] __main__: allowed_file : True
+2025-09-18 14:57:34,406 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 14:57:34,411 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 14:57:34,412 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 14:57:34,876 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7f0e9264bba0>
+2025-09-18 14:57:34,876 [INFO] __main__: allowed_file : True
+2025-09-18 14:57:34,880 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 14:57:34,886 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 14:57:34,887 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 14:57:35,035 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:35] "POST /predict HTTP/1.1" 200 -
+2025-09-18 14:57:35,037 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:35] "POST /predict HTTP/1.1" 200 -
+2025-09-18 14:57:40,027 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[32mGET /dashboard/ HTTP/1.1[0m" 302 -
+2025-09-18 14:57:40,049 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:57:40,077 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:57:40,078 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:57:40,079 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:57:40,098 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:57:40,853 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 14:57:40,880 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:40] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 14:57:54,413 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:54] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 14:57:54,450 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:54] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 14:57:54,453 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:54] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 14:57:54,455 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:54] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 14:57:54,457 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:54] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 14:57:54,515 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 14:57:54] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:02:58,039 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 15:02:58,039 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:02:58,040 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:02:58,040 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:02:59,597 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:03:02,502 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:03:02,502 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:03:04,210 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:03:04,211 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:03:04,799 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:03:04,800 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:03:04,800 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:03:04,848 [INFO] __main__: Dashboard username configuré: pierre
+2025-09-18 15:03:04,848 [INFO] __main__: Dashboard password configuré: pierre
+2025-09-18 15:03:05,220 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:03:05,222 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:03:31,307 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "[32mGET /dashboard/overview HTTP/1.1[0m" 302 -
+2025-09-18 15:03:31,335 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 15:03:31,406 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:03:31,408 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 15:03:31,409 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:03:31,410 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:03:31,430 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:31] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:03:32,304 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:32] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:03:32,308 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:32] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 15:03:32,331 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:32] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,143 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[32mPOST /dashboard/login HTTP/1.1[0m" 302 -
+2025-09-18 15:03:37,149 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 15:03:37,200 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,204 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,204 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,207 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,249 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,321 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,327 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,333 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,370 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:03:37,412 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,416 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:03:37,432 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:37] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:03:37,441 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:03:37,856 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:03:38,258 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:03:38,260 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:03:38,261 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:03:38,263 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:03:38,539 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 15:03:38,540 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:03:38,540 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:03:38,542 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:38] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:03:38,817 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:03:38,823 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:03:38] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:05:48,701 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 15:05:48,775 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,782 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,789 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,791 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,857 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,901 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,902 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,918 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:48] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:05:48,969 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:05:49,004 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:49] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:05:49,006 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:05:49,007 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:49] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:05:49,016 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:05:49,027 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:49] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:05:49,261 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:05:49,265 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:49] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:05:49,289 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:05:49,305 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:05:49,324 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:49] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:05:49,331 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:49] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:05:55,035 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:55] "[36mGET /dashboard/static/pages/configuration.html HTTP/1.1[0m" 304 -
+2025-09-18 15:05:55,073 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:05:55,076 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:05:55,079 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:55] "GET /dashboard/telemetry/get_is_telemetry_accepted HTTP/1.1" 200 -
+2025-09-18 15:05:55,088 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:55] "GET /dashboard/api/users HTTP/1.1" 200 -
+2025-09-18 15:05:55,360 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:05:55,363 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:05:55,365 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:55] "GET /dashboard/api/deploy_config HTTP/1.1" 200 -
+2025-09-18 15:05:55,376 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:55] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:05:59,866 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:05:59] "[31m[1mPOST /dashboard/api/user/delete HTTP/1.1[0m" 400 -
+2025-09-18 15:06:02,468 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:02] "[31m[1mPOST /dashboard/api/user/delete HTTP/1.1[0m" 400 -
+2025-09-18 15:06:02,948 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:02] "[31m[1mPOST /dashboard/api/user/delete HTTP/1.1[0m" 400 -
+2025-09-18 15:06:03,114 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:03] "[31m[1mPOST /dashboard/api/user/delete HTTP/1.1[0m" 400 -
+2025-09-18 15:06:03,262 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:03] "[31m[1mPOST /dashboard/api/user/delete HTTP/1.1[0m" 400 -
+2025-09-18 15:06:03,447 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:03] "[31m[1mPOST /dashboard/api/user/delete HTTP/1.1[0m" 400 -
+2025-09-18 15:06:22,386 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:22] "POST /dashboard/api/user/create HTTP/1.1" 200 -
+2025-09-18 15:06:22,393 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:22] "GET /dashboard/api/users HTTP/1.1" 200 -
+2025-09-18 15:06:37,651 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[32mGET /dashboard/logout HTTP/1.1[0m" 302 -
+2025-09-18 15:06:37,664 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 15:06:37,719 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:06:37,721 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:06:37,727 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 15:06:37,730 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:06:37,772 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:06:37,812 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:06:37,815 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:37] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,165 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[32mPOST /dashboard/login HTTP/1.1[0m" 302 -
+2025-09-18 15:06:46,171 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 15:06:46,221 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,224 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,227 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,229 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,274 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,305 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,307 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,313 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,340 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:06:46,366 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,367 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:06:46,369 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:06:46,375 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:06:46,388 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:06:46,625 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:06:46,630 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:06:46,649 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:06:46,655 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:06:46,656 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:06:46,659 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:06:46] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:07:18,026 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:07:18,027 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:07:18,028 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:07:18,215 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:07:18,215 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:07:18,215 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:07:23,927 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:07:23,927 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:07:25,370 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:07:25,374 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:07:25,948 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:07:25,949 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:07:25,954 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:07:26,001 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:07:26,001 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:07:26,410 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:07:26,411 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:07:26,411 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:07:29,545 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:07:29,545 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:07:30,847 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:07:30,849 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:07:31,479 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:07:31,480 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:07:31,480 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:07:31,530 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:07:31,531 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:07:31,919 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:07:31,920 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:07:31,949 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:07:31] "GET / HTTP/1.1" 200 -
+2025-09-18 15:07:39,094 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x78c336373ba0>
+2025-09-18 15:07:39,095 [INFO] __main__: allowed_file : True
+2025-09-18 15:07:39,105 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:07:39,110 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:07:39,110 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:07:39,446 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:07:39] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:07:41,167 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:07:41] "GET / HTTP/1.1" 200 -
+2025-09-18 15:07:48,695 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x78c336373ba0>
+2025-09-18 15:07:48,696 [INFO] __main__: allowed_file : True
+2025-09-18 15:07:48,699 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:07:48,705 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:07:48,705 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:07:48,761 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:07:48] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:08:01,410 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 15:08:01,448 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,452 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,460 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,484 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,591 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,616 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,618 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,620 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,637 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:08:01,673 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,679 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:08:01,703 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:08:01,705 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:08:01,708 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:01] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:08:01,812 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:08:01,816 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:08:02,101 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 15:08:02,106 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:08:02,397 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:08:02,423 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:02] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:08:07,519 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "[32mGET /dashboard/logout HTTP/1.1[0m" 302 -
+2025-09-18 15:08:07,528 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "GET /dashboard/login HTTP/1.1" 200 -
+2025-09-18 15:08:07,564 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:08:07,576 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 15:08:07,577 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:08:07,580 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:08:07,640 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:07] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:08:50,462 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:50] "POST /dashboard/login HTTP/1.1" 200 -
+2025-09-18 15:08:50,518 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:50] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:08:50,521 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:50] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:08:50,531 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:50] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:08:50,531 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:50] "[36mGET /dashboard/static/img/header.png HTTP/1.1[0m" 304 -
+2025-09-18 15:08:50,572 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:08:50] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:40,856 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "[32mPOST /dashboard/login HTTP/1.1[0m" 302 -
+2025-09-18 15:11:40,865 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 15:11:40,915 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:11:40,920 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:11:40,923 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:11:40,924 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:11:40,957 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:40] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:11:41,035 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:41,038 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:41,050 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:41,070 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:11:41,099 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:41,102 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:41,106 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:11:41,111 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:11:41,119 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:11:41,348 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:11:41,354 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:11:41,391 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:11:41,392 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:11:41,411 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:11:41,427 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:41] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:11:46,547 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:46] "GET /dashboard/static/pages/plotly_graph.html HTTP/1.1" 200 -
+2025-09-18 15:11:46,576 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:46] "[36mGET /dashboard/static/elements/endpointDetails.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:46,581 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:11:46,595 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:46] "[36mGET /dashboard/static/elements/monitorLevel.html HTTP/1.1[0m" 304 -
+2025-09-18 15:11:46,860 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:11:46,868 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:46] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:11:59,352 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:11:59,637 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:11:59,645 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:11:59] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:12:00,758 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:12:01,038 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:12:01,043 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:01] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:12:04,031 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:04] "GET /dashboard/static/pages/exception_overview.html HTTP/1.1" 200 -
+2025-09-18 15:12:04,045 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:12:04,329 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:12:04,335 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:04] "GET /dashboard/api/num_exceptions HTTP/1.1" 200 -
+2025-09-18 15:12:04,355 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:12:04,641 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:12:04,662 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:04] "GET /dashboard/api/exception_occurrence/0/5 HTTP/1.1" 200 -
+2025-09-18 15:12:05,661 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:12:05,663 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:12:05,945 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:12:05,947 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:05] "GET /dashboard/api/endpoints_hits HTTP/1.1" 200 -
+2025-09-18 15:12:05,948 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:12:05,950 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:05] "GET /dashboard/api/versions HTTP/1.1" 200 -
+2025-09-18 15:12:05,958 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:12:06,308 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:12:06,309 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:12:06] "POST /dashboard/api/multi_version HTTP/1.1" 200 -
+2025-09-18 15:12:47,017 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:12:47,018 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:12:47,019 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:12:47,224 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:12:47,225 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:12:47,225 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added

@@ -4,6 +4,8 @@ import base64
 
 
 from flask import Flask, render_template, request, redirect, url_for
+import flask_monitoringdashboard as dashboard
+
 from werkzeug.utils import secure_filename
 
 import numpy as np
@@ -14,8 +16,12 @@ import keras
 from PIL import Image
 
 import logging
+from logging.handlers import SMTPHandler
 
-LOG_DIR = os.path.join(os.path.dirname(__file__), "log")
+
+LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
+# = /home/pierre/debugger/logs
+# la variable spéciale __file__ contient le chemin du fichier Python en cours d’exécution
 LOG_FILE = os.path.join(LOG_DIR, "app.log")
 logging.basicConfig(
     level=logging.DEBUG,
@@ -28,9 +34,27 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-logger.info("Logger configuré avec succès")
+import dotenv
+from dotenv import load_dotenv
+load_dotenv()
+MDP_GOOGLE = os.getenv("MDP_GOOGLE")
 
+# ---------------- Config alerting mail ----------------
+mail_handler = SMTPHandler(
+    mailhost=("smtp.gmail.com", 587),
+    fromaddr="pierre.defourneaux@gmail.com",
+    toaddrs=["pierre.defourneaux@gmail.com"],
+    subject=" CRITICAL error in Flask app",
+    credentials=("pierre.defourneaux@gmail.com", MDP_GOOGLE),  
+    secure=() # secure de SMTPHandler sert à activer une connexion chiffrée avec le serveur SMTP
+)
+mail_handler.setLevel(logging.CRITICAL) # déclencher à partir de critical
+logger.addHandler(mail_handler)
 
+logger.info("Logger configuré avec succès (info)")
+logger.critical("Ceci est un test CRITICAL pour recevoir un mail")
+
+logger.info(f"cwd pour savoir comment atteindre le config file cfg :{os.getcwd()}")
 # prints pour affichage dans github actions
 print(f"print Current working dir: {os.getcwd()}")
 for file in os.listdir():
@@ -44,9 +68,20 @@ CLASSES = ['desert', 'forest', 'meadow', 'mountain']
 
 app = Flask(__name__)
 
+logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""") 
+dashboard.config.init_from(file='/home/pierre/debugger/config.cfg')
+dashboard.bind(app)
+logger.info(f"Dashboard username configuré: {dashboard.config.username}")
+logger.info(f"Dashboard password configuré: {dashboard.config.password}")
+
 # ---------------- Model ----------------
 MODEL_PATH = "app/models/final_cnn.keras"
-model = keras.saving.load_model(MODEL_PATH, compile=False)
+try:
+    model = keras.saving.load_model(MODEL_PATH, compile=False)
+except Exception as e:
+    logger.critical(f"Impossible de charger le modèle {MODEL_PATH}: {e}", exc_info=True)
+    raise # faire remonter l'erreur et arreter l'app maintenant
+
 
 # ---------------- Utils ----------------
 def allowed_file(filename: str) -> bool:
@@ -110,6 +145,12 @@ def preprocess_from_pil(pil_img: Image.Image) -> np.ndarray:
     """
     img = pil_img.convert("RGB")
     # REDIMENSIONER ICI
+    # On récupère les dimensions attendues par le model, pour traitement à venir
+    model_IN_shape = model.input_shape
+    model_H_W = (model_IN_shape[1], model_IN_shape[2])
+    logger.debug(f"Input shape du model : {model_IN_shape}")
+
+
     img = img.resize((224, 224), Image.Resampling.LANCZOS)
     img_array = np.asarray(img, dtype=np.float32) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
@@ -124,6 +165,8 @@ def index():
         Réponse HTML rendant le template "upload.html".
     """
     return render_template("upload.html")
+
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
