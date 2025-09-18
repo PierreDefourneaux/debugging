@@ -983,3 +983,33 @@
 2025-09-18 15:12:47,224 [INFO] apscheduler.scheduler: Scheduler has been shut down
 2025-09-18 15:12:47,225 [DEBUG] apscheduler.scheduler: Looking for jobs to run
 2025-09-18 15:12:47,225 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:13:13,307 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:13:13,308 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:13:14,935 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:13:14,946 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:13:15,563 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:13:15,563 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:13:15,563 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:13:15,618 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:13:15,618 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:13:15,974 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:13:15,974 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:13:15,975 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:13:18,962 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:13:18,962 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:13:20,367 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:13:20,370 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:13:20,987 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:13:20,988 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:13:20,993 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:13:21,042 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:13:21,042 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:13:21,387 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:13:21,389 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:14:41,689 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:14:41,689 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:14:41,689 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:14:41,903 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:14:41,903 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:14:41,903 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
