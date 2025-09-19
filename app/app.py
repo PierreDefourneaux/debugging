@@ -78,7 +78,14 @@ logger.info(f"Dashboard password configuré: {dashboard.config.password}")
 MODEL_PATH = "app/models/final_cnn.keras"
 try:
     model = keras.saving.load_model(MODEL_PATH, compile=False)
+    model_input_shape = model.input_shape
+    model_height = model_input_shape[1]
+    model_width =  model_input_shape[2]
+    logger.debug(f"model_input_shape : {model_input_shape}")
+    logger.debug(f"Input model_height : {model_height}")
+    logger.debug(f"Input model_width : {model_width}")
 except Exception as e:
+    # insersion d'un alerting déclenché par un logger de niveau critical
     logger.critical(f"Impossible de charger le modèle {MODEL_PATH}: {e}", exc_info=True)
     raise # faire remonter l'erreur et arreter l'app maintenant
 
@@ -144,14 +151,8 @@ def preprocess_from_pil(pil_img: Image.Image) -> np.ndarray:
         np.ndarray de forme (1, H, W, 3), dtype float32, valeurs ∈ [0, 1].
     """
     img = pil_img.convert("RGB")
-    # REDIMENSIONER ICI
-    # On récupère les dimensions attendues par le model, pour traitement à venir
-    model_IN_shape = model.input_shape
-    model_H_W = (model_IN_shape[1], model_IN_shape[2])
-    logger.debug(f"Input shape du model : {model_IN_shape}")
-
-
-    img = img.resize((224, 224), Image.Resampling.LANCZOS)
+    # REDIMENSIONER ICI POUR FIX LE BUG
+    img = img.resize((model_width, model_height), Image.Resampling.LANCZOS)
     img_array = np.asarray(img, dtype=np.float32) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
     return img_array
@@ -208,14 +209,24 @@ def predict():
     cls_idx = int(np.argmax(probs))
     label = CLASSES[cls_idx]
     conf = float(probs[cls_idx])
+    variable_que_je_tente_de_passer = "PAYLOAD!"
 
 
     image_data_url = to_data_url(pil_img, fmt="JPEG")
 
-    return render_template("result.html", image_data_url=image_data_url, predicted_label=label, confidence=conf, classes=CLASSES)
+    return render_template("result.html", variable_que_je_tente_de_passer = variable_que_je_tente_de_passer ,image_data_url=image_data_url, predicted_label=label, confidence=conf, classes=CLASSES)
 
-@app.route("/feedback", methods=["GET"])
-def feedback_ok():
+@app.route("/feedback1", methods=["GET"])
+def feedback_1():
+    """Affiche la page de confirmation de feedback (placeholder).
+
+    Returns:
+        Réponse HTML rendant le template "feedback_ok.html".
+    """
+    return render_template("feedback_ok.html")
+
+@app.route("/feedback0", methods=["GET"])
+def feedback_0():
     """Affiche la page de confirmation de feedback (placeholder).
 
     Returns:

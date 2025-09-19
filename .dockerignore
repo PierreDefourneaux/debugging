@@ -1,0 +1,5 @@
+# Ignorer les fichiers/dossiers cachés
+.*
+
+# et le venv
+env_debug

@@ -1013,3 +1013,701 @@
 2025-09-18 15:14:41,903 [INFO] apscheduler.scheduler: Scheduler has been shut down
 2025-09-18 15:14:41,903 [DEBUG] apscheduler.scheduler: Looking for jobs to run
 2025-09-18 15:14:41,903 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:15:05,424 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:15:05,424 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:15:10,347 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:15:10,352 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:15:10,937 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:15:10,938 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:15:10,948 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:15:10,990 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:15:10,991 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:15:11,355 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:15:11,355 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:15:11,356 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:15:14,500 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:15:14,501 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:15:16,318 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:15:16,322 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:15:16,955 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:15:16,955 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:15:16,961 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:15:17,006 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:15:17,006 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:15:17,420 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:15:17,421 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:15:18,034 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:18] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:15:18,043 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:15:18,049 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:15:18,331 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:15:18,336 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:18,337 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:15:18,342 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:18,629 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:15:18,631 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 15:15:18,637 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:18,640 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:18] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:15:18,918 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:15:18,942 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:18] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:15:18,952 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:19,234 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:15:19,241 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:19] "GET /dashboard/api/exception_occurrence/0/10 HTTP/1.1" 200 -
+2025-09-18 15:15:20,278 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "GET /dashboard/overview HTTP/1.1" 200 -
+2025-09-18 15:15:20,335 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:15:20,338 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:15:20,341 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:15:20,345 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:15:20,403 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:15:19,969 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:19] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:15:19,974 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:19] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:15:19,974 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:19] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:15:19,981 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:19] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-18 15:15:19,993 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:20,011 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:15:20,015 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:15:20,020 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:20,030 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:15:20,046 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:15:20,273 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:15:20,276 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:15:20,312 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:15:20,321 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:15:20,321 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:15:20,326 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:20] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:15:58,433 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:15:58] "GET / HTTP/1.1" 200 -
+2025-09-18 15:16:06,080 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7ea0a115bba0>
+2025-09-18 15:16:06,080 [INFO] __main__: allowed_file : True
+2025-09-18 15:16:06,092 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:16:06,113 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:16:06,113 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:16:06,450 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:06] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:16:14,960 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:14] "GET / HTTP/1.1" 200 -
+2025-09-18 15:16:19,603 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7ea0a115bba0>
+2025-09-18 15:16:19,603 [INFO] __main__: allowed_file : True
+2025-09-18 15:16:19,605 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:16:19,611 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:16:19,611 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:16:19,669 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:19] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:16:30,781 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:30] "[36mGET /dashboard/static/pages/configuration.html HTTP/1.1[0m" 304 -
+2025-09-18 15:16:30,816 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:30,818 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:30] "GET /dashboard/api/users HTTP/1.1" 200 -
+2025-09-18 15:16:30,821 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:30,829 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:30] "GET /dashboard/telemetry/get_is_telemetry_accepted HTTP/1.1" 200 -
+2025-09-18 15:16:31,098 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:31,100 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:31] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:16:31,107 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:31,108 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:31] "GET /dashboard/api/deploy_config HTTP/1.1" 200 -
+2025-09-18 15:16:43,525 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:43] "[36mGET /dashboard/static/pages/plotly_graph.html HTTP/1.1[0m" 304 -
+2025-09-18 15:16:43,541 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:43] "[36mGET /dashboard/static/elements/endpointDetails.html HTTP/1.1[0m" 304 -
+2025-09-18 15:16:43,547 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:43,568 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:43] "[36mGET /dashboard/static/elements/monitorLevel.html HTTP/1.1[0m" 304 -
+2025-09-18 15:16:43,841 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:43,847 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:43] "GET /dashboard/api/endpoints_hits HTTP/1.1" 200 -
+2025-09-18 15:16:43,860 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:44,147 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:44,149 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:44] "POST /dashboard/api/api_performance HTTP/1.1" 200 -
+2025-09-18 15:16:50,426 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:50,709 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:50,719 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:50] "GET /dashboard/api/requests/2025-09-08/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:16:55,076 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:55,364 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:55,365 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:55] "GET /dashboard/api/endpoints_hits HTTP/1.1" 200 -
+2025-09-18 15:16:55,372 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:16:55,655 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:16:55,660 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:55] "POST /dashboard/api/api_performance HTTP/1.1" 200 -
+2025-09-18 15:16:55,850 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:16:55] "GET /dashboard/static/pages/reporting.html HTTP/1.1" 200 -
+2025-09-18 15:17:04,101 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:04,385 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:04,390 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:04] "GET /dashboard/api/endpoints_hits HTTP/1.1" 200 -
+2025-09-18 15:17:04,398 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:04,695 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:04,697 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:04] "POST /dashboard/api/api_performance HTTP/1.1" 200 -
+2025-09-18 15:17:06,750 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:06,754 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:06] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:17:06,760 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:07,049 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:07,056 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:07] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:17:07,057 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:07,060 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:07] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:17:11,438 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:11,721 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:11,723 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:11] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:17:15,616 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:15,894 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:15,897 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:15] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:17:18,491 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:18] "[36mGET /dashboard/static/pages/exception_overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:17:18,506 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:18,789 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:18,796 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:18] "GET /dashboard/api/num_exceptions HTTP/1.1" 200 -
+2025-09-18 15:17:18,805 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:19,090 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:19,095 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:19] "GET /dashboard/api/exception_occurrence/0/5 HTTP/1.1" 200 -
+2025-09-18 15:17:23,169 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:23,171 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:23,475 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:23,477 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:23,483 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:23] "GET /dashboard/api/endpoints_hits HTTP/1.1" 200 -
+2025-09-18 15:17:23,483 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:23] "GET /dashboard/api/versions HTTP/1.1" 200 -
+2025-09-18 15:17:23,492 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:23,788 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:23,792 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:23] "POST /dashboard/api/multi_version HTTP/1.1" 200 -
+2025-09-18 15:17:27,792 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:28,081 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:28,086 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:28] "GET /dashboard/api/requests/2025-09-08/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:17:33,156 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:33,166 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:33] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:17:33,171 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:33,438 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:33,455 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:33] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:17:33,456 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:33,460 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:33] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:17:33,467 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:17:33,747 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:17:33,753 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:17:33] "GET /dashboard/api/exception_occurrence/0/10 HTTP/1.1" 200 -
+2025-09-18 15:19:39,844 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:19:40,135 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:19:40,142 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:19:40] "GET /dashboard/api/hourly_load/2025-09-04/2025-09-18 HTTP/1.1" 200 -
+2025-09-18 15:20:03,808 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:20:03] "GET /dashboard/api/users HTTP/1.1" 200 -
+2025-09-18 15:20:03,811 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:20:03,816 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:20:03,822 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:20:03] "GET /dashboard/telemetry/get_is_telemetry_accepted HTTP/1.1" 200 -
+2025-09-18 15:20:04,102 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:20:04,105 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:20:04] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:20:04,105 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:20:04,106 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:20:04] "GET /dashboard/api/deploy_config HTTP/1.1" 200 -
+2025-09-18 15:26:23,900 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 15:26:23,912 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:26:23,912 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:26:23,912 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:26:25,464 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:26:32,284 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:26:32,284 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:26:32,284 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:42:08,087 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:42:08,088 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:42:09,557 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:42:09,559 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:42:10,536 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:42:10,537 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:42:10,542 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:42:10,589 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:42:10,589 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:42:11,114 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:42:11,114 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:42:11,115 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:42:14,269 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:42:14,269 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:42:15,681 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:42:15,683 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:42:16,298 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:42:16,298 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:42:16,298 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:42:16,347 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:42:16,347 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:42:16,699 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:42:16,721 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:42:20,002 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "GET /dashboard/ HTTP/1.1" 200 -
+2025-09-18 15:42:20,061 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/css/prism.css HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,066 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/js/prism.js HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,070 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,094 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,868 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,896 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,898 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,915 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,922 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/img/favicon.ico HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,953 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2025-09-18 15:42:20,993 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/pages/telemetry.html HTTP/1.1[0m" 304 -
+2025-09-18 15:42:20,995 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:20] "[36mGET /dashboard/static/elements/pagination.html HTTP/1.1[0m" 304 -
+2025-09-18 15:42:21,019 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:21] "GET /dashboard/telemetry/get_is_telemetry_answered HTTP/1.1" 200 -
+2025-09-18 15:42:21,019 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:42:21,097 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2025-09-18 15:42:21,252 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:42:21,253 [DEBUG] urllib3.connectionpool: https://raw.githubusercontent.com:443 "GET /flask-dashboard/fmd-telemetry/master/ip_address HTTP/1.1" 200 39
+2025-09-18 15:42:21,257 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:42:21,260 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:42:21,547 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/UserSession HTTP/1.1" 201 64
+2025-09-18 15:42:21,548 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 34.66.119.167:4000
+2025-09-18 15:42:21,551 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:42:21,553 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:21] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+2025-09-18 15:42:21,836 [DEBUG] urllib3.connectionpool: http://34.66.119.167:4000 "POST /parse/classes/Endpoints HTTP/1.1" 201 64
+2025-09-18 15:42:21,846 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:21] "GET /dashboard/api/overview HTTP/1.1" 200 -
+2025-09-18 15:42:34,738 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:42:34] "GET / HTTP/1.1" 200 -
+2025-09-18 15:44:17,893 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x783c6adfbba0>
+2025-09-18 15:44:17,904 [INFO] __main__: allowed_file : True
+2025-09-18 15:44:17,930 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:44:17,937 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:44:17,938 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:44:18,529 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:44:18] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:45:12,034 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:45:12] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-09-18 15:45:45,779 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:45:45,779 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:45:47,159 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:45:47,162 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:45:48,012 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:45:48,013 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:45:48,013 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:45:48,072 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:45:48,072 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:45:48,461 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:45:48,461 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:45:48,462 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:45:51,559 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:45:51,559 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:45:52,922 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:45:52,924 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:45:53,531 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:45:53,532 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:45:53,537 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:45:53,585 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:45:53,585 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:45:53,913 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:45:53,934 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:46:44,738 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:46:44] "GET / HTTP/1.1" 200 -
+2025-09-18 15:47:39,765 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x78913751bba0>
+2025-09-18 15:47:39,765 [INFO] __main__: allowed_file : True
+2025-09-18 15:47:39,796 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:47:39,802 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:47:39,802 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:47:40,191 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:47:40] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:47:42,031 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:47:42] "GET /feedback HTTP/1.1" 200 -
+2025-09-18 15:48:28,534 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:48:28] "GET / HTTP/1.1" 200 -
+2025-09-18 15:48:31,804 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x78913751bba0>
+2025-09-18 15:48:31,805 [INFO] __main__: allowed_file : True
+2025-09-18 15:48:31,808 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:48:31,812 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:48:31,812 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:48:31,870 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:48:31] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:48:33,690 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:48:33] "GET /feedback HTTP/1.1" 200 -
+2025-09-18 15:48:34,973 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:48:34] "GET / HTTP/1.1" 200 -
+2025-09-18 15:48:39,081 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x78913751bba0>
+2025-09-18 15:48:39,081 [INFO] __main__: allowed_file : True
+2025-09-18 15:48:39,086 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:48:39,091 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:48:39,091 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:48:39,152 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:48:39] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:54:09,077 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:54:09,089 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:54:09,090 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:54:09,213 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:54:09,213 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:54:09,213 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:54:16,853 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:54:16,853 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:54:18,174 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:54:18,178 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:54:19,006 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:54:19,007 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:54:19,013 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:54:19,056 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:54:19,056 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:54:19,424 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:54:19,425 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:54:19,426 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:54:22,405 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:54:22,405 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:54:23,730 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:54:23,732 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:54:24,352 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:54:24,352 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:54:24,353 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:54:24,405 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:54:24,405 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:54:24,736 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:54:24,747 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:54:35,625 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x748949097ba0>
+2025-09-18 15:54:35,625 [INFO] __main__: allowed_file : True
+2025-09-18 15:54:35,644 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:54:35,650 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:54:35,650 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:54:36,049 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:54:36] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:58:27,494 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 15:58:27,494 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:58:27,495 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:58:27,495 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:58:29,020 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:58:31,979 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:58:31,979 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:58:33,459 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:58:33,463 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:58:34,060 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:58:34,061 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:58:34,066 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:58:34,111 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:58:34,111 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:58:34,565 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:58:34,567 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:58:42,213 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:58:42,214 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:58:42,216 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:58:42,339 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 15:58:42,339 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:58:42,339 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:58:47,895 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:58:47,895 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:58:49,045 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:58:49,047 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:58:49,622 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:58:49,622 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:58:49,628 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:58:49,669 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:58:49,669 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:58:50,095 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 15:58:50,095 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 15:58:50,095 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 15:58:53,036 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 15:58:53,036 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 15:58:53,582 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 15:58:53,583 [INFO] __main__: PATH EXIST ?True
+2025-09-18 15:58:54,239 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 15:58:54,239 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 15:58:54,240 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 15:58:54,288 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 15:58:54,288 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 15:58:54,626 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 15:58:54,628 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 15:59:11,243 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:11] "GET / HTTP/1.1" 200 -
+2025-09-18 15:59:21,607 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7ddf220e3ba0>
+2025-09-18 15:59:21,607 [INFO] __main__: allowed_file : True
+2025-09-18 15:59:21,616 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:59:21,621 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:59:21,621 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:59:21,987 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:21] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:59:24,111 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:24] "GET /feedback1 HTTP/1.1" 200 -
+2025-09-18 15:59:25,276 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:25] "GET / HTTP/1.1" 200 -
+2025-09-18 15:59:28,371 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7ddf220e3ba0>
+2025-09-18 15:59:28,371 [INFO] __main__: allowed_file : True
+2025-09-18 15:59:28,375 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 15:59:28,380 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 15:59:28,380 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 15:59:28,437 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:28] "POST /predict HTTP/1.1" 200 -
+2025-09-18 15:59:29,294 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:29] "GET /feedback0 HTTP/1.1" 200 -
+2025-09-18 15:59:30,930 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 15:59:30] "GET / HTTP/1.1" 200 -
+2025-09-18 16:39:49,238 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 16:39:49,238 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 16:39:50,894 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 16:39:50,898 [INFO] __main__: PATH EXIST ?True
+2025-09-18 16:39:51,753 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 16:39:51,754 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 16:39:51,754 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 16:39:51,801 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 16:39:51,801 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 16:39:52,249 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 16:39:52,249 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 16:39:52,250 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 16:39:55,294 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 16:39:55,294 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 16:39:56,745 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 16:39:56,749 [INFO] __main__: PATH EXIST ?True
+2025-09-18 16:39:57,332 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 16:39:57,333 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 16:39:57,338 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 16:39:57,388 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 16:39:57,389 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 16:39:57,750 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 16:39:57,752 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 16:40:02,122 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:40:02] "GET / HTTP/1.1" 200 -
+2025-09-18 16:40:42,251 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x77d00eb83ba0>
+2025-09-18 16:40:42,252 [INFO] __main__: allowed_file : True
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: b'Adobe Photoshop CS5 Windows\x00'
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 142 - value: b'2015:07:15 14:18:34\x00'
+2025-09-18 16:40:42,283 [DEBUG] PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa4'
+2025-09-18 16:40:42,288 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 16:40:42,294 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 16:40:42,295 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 16:40:42,681 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:40:42] "POST /predict HTTP/1.1" 200 -
+2025-09-18 16:40:48,951 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:40:48] "GET /feedback1 HTTP/1.1" 200 -
+2025-09-18 16:40:50,577 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:40:50] "GET / HTTP/1.1" 200 -
+2025-09-18 16:40:57,409 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x77d00eb83ba0>
+2025-09-18 16:40:57,409 [INFO] __main__: allowed_file : True
+2025-09-18 16:40:57,414 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 16:40:57,419 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 16:40:57,419 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 16:40:57,483 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:40:57] "POST /predict HTTP/1.1" 200 -
+2025-09-18 16:41:03,842 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:41:03] "GET /feedback0 HTTP/1.1" 200 -
+2025-09-18 16:43:09,682 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:43:09] "GET / HTTP/1.1" 200 -
+2025-09-18 16:51:21,978 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x77d00eb83ba0>
+2025-09-18 16:51:21,978 [INFO] __main__: allowed_file : True
+2025-09-18 16:51:21,979 [DEBUG] PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-18 16:51:21,979 [DEBUG] PIL.TiffImagePlugin: tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-18 16:51:21,979 [DEBUG] PIL.TiffImagePlugin: tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-18 16:51:21,980 [DEBUG] PIL.TiffImagePlugin: tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-18 16:51:21,980 [DEBUG] PIL.TiffImagePlugin: tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: b'Adobe Photoshop CS5 Windows\x00'
+2025-09-18 16:51:21,980 [DEBUG] PIL.TiffImagePlugin: tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 142 - value: b'2015:07:15 14:18:34\x00'
+2025-09-18 16:51:21,980 [DEBUG] PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa4'
+2025-09-18 16:51:21,983 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 16:51:21,989 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 16:51:21,990 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 16:51:22,050 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:51:22] "POST /predict HTTP/1.1" 200 -
+2025-09-18 16:51:24,745 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 16:51:24] "GET /feedback1 HTTP/1.1" 200 -
+2025-09-18 16:59:16,971 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 16:59:16,971 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 16:59:16,972 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 16:59:16,972 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 16:59:18,581 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 16:59:23,070 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 16:59:23,070 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 16:59:24,800 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 16:59:24,802 [INFO] __main__: PATH EXIST ?True
+2025-09-18 16:59:25,643 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 16:59:25,644 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 16:59:25,644 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 16:59:25,691 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 16:59:25,691 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 16:59:26,072 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 16:59:26,083 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 17:00:20,680 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:00:20] "GET / HTTP/1.1" 200 -
+2025-09-18 17:00:26,827 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x76f4737dfc40>
+2025-09-18 17:00:26,828 [INFO] __main__: allowed_file : True
+2025-09-18 17:00:26,863 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 17:00:26,872 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 17:00:26,872 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 17:00:27,263 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:00:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-09-18 17:00:27,296 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:00:27] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-09-18 17:00:27,613 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:00:27] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-09-18 17:00:27,973 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:00:27] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=mDaJ2jFXOGV4me17VBD3 HTTP/1.1" 200 -
+2025-09-18 17:00:28,228 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:00:28] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-09-18 17:01:57,908 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 17:01:57,909 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 17:01:57,909 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:01:57,909 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:01:58,727 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 17:02:01,716 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 17:02:01,716 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 17:02:04,659 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 17:02:04,660 [INFO] __main__: PATH EXIST ?True
+2025-09-18 17:02:05,230 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 17:02:05,230 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:02:05,236 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:02:05,279 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 17:02:05,279 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 17:02:05,818 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 17:02:05,820 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 17:02:12,757 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 17:02:12,758 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:02:12,758 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:02:12,918 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 17:02:12,918 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:02:12,919 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:02:19,948 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 17:02:19,948 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 17:02:21,900 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 17:02:21,904 [INFO] __main__: PATH EXIST ?True
+2025-09-18 17:02:22,496 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 17:02:22,496 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:02:22,501 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:02:22,547 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 17:02:22,547 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 17:02:22,903 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-18 17:02:22,903 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-18 17:02:22,903 [INFO] werkzeug:  * Restarting with stat
+2025-09-18 17:02:26,106 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-18 17:02:26,106 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-18 17:02:27,855 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-18 17:02:27,856 [INFO] __main__: PATH EXIST ?True
+2025-09-18 17:02:28,504 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-18 17:02:28,505 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:02:28,505 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:02:28,573 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-18 17:02:28,573 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-18 17:02:28,964 [WARNING] werkzeug:  * Debugger is active!
+2025-09-18 17:02:28,966 [INFO] werkzeug:  * Debugger PIN: 525-049-598
+2025-09-18 17:02:28,997 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:02:28] "GET / HTTP/1.1" 200 -
+2025-09-18 17:02:54,469 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x7437138e3c40>
+2025-09-18 17:02:54,469 [INFO] __main__: allowed_file : True
+2025-09-18 17:02:54,480 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-18 17:02:54,488 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-18 17:02:54,488 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-18 17:02:54,854 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:02:54] "POST /predict HTTP/1.1" 200 -
+2025-09-18 17:03:07,818 [INFO] werkzeug: 127.0.0.1 - - [18/Sep/2025 17:03:07] "GET /feedback1 HTTP/1.1" 200 -
+2025-09-18 17:03:34,858 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-18 17:03:34,859 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-18 17:03:34,859 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-18 17:03:34,859 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-18 17:03:35,635 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 09:13:26,633 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 09:13:26,633 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 09:13:28,935 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 09:13:28,941 [INFO] __main__: PATH EXIST ?True
+2025-09-19 09:13:30,515 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 09:13:30,516 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 09:13:30,517 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 09:13:30,617 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 09:13:30,617 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 09:13:31,324 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-19 09:13:31,325 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-19 09:13:31,326 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 09:13:34,624 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 09:13:34,624 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 09:13:36,124 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 09:13:36,128 [INFO] __main__: PATH EXIST ?True
+2025-09-19 09:13:36,768 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 09:13:36,769 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 09:13:36,774 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 09:13:36,823 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 09:13:36,823 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 09:13:37,215 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 09:13:37,225 [INFO] werkzeug:  * Debugger PIN: 113-463-406
+2025-09-19 09:13:37,259 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 09:13:37] "GET / HTTP/1.1" 200 -
+2025-09-19 09:13:37,358 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 09:13:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-19 09:13:52,560 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x715576ecbc40>
+2025-09-19 09:13:52,561 [INFO] __main__: allowed_file : True
+2025-09-19 09:13:52,645 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-19 09:13:52,659 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-19 09:13:52,660 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-19 09:13:53,925 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 09:13:53] "POST /predict HTTP/1.1" 200 -
+2025-09-19 09:15:24,195 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:24] "GET /feedback1 HTTP/1.1" 200 -
+2025-09-19 09:15:25,713 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 09:15:25] "GET / HTTP/1.1" 200 -
+2025-09-19 11:42:38,500 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 11:42:38,500 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 11:42:40,125 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 11:42:40,126 [INFO] __main__: PATH EXIST ?True
+2025-09-19 11:42:41,488 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 11:42:41,489 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:42:41,494 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:42:41,552 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 11:42:41,552 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 11:42:42,308 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-19 11:42:42,317 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-19 11:42:42,317 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-19 11:42:42,318 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 11:42:46,627 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 11:42:46,627 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 11:42:47,910 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 11:42:47,912 [INFO] __main__: PATH EXIST ?True
+2025-09-19 11:42:48,655 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 11:42:48,656 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:42:48,656 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:42:48,711 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 11:42:48,711 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 11:42:49,442 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-19 11:42:49,447 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 11:42:49,464 [INFO] werkzeug:  * Debugger PIN: 384-038-561
+2025-09-19 11:49:12,623 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-19 11:49:12,624 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 11:49:12,624 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:49:12,625 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:49:14,440 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 11:49:17,918 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 11:49:17,918 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 11:49:19,212 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 11:49:19,213 [INFO] __main__: PATH EXIST ?True
+2025-09-19 11:49:19,804 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 11:49:19,805 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:49:19,805 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:49:19,856 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 11:49:19,856 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 11:49:20,236 [DEBUG] __main__: Input shape du model : (None, 224, 224, 3)
+2025-09-19 11:49:20,236 [DEBUG] __main__: Input model_height : 224
+2025-09-19 11:49:20,236 [DEBUG] __main__: Input model_width : 224
+2025-09-19 11:49:20,240 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 11:49:20,242 [INFO] werkzeug:  * Debugger PIN: 384-038-561
+2025-09-19 11:50:09,598 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-19 11:50:09,599 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 11:50:09,599 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:50:09,599 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:50:10,408 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 11:50:13,029 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 11:50:13,030 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:50:13,030 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:50:20,594 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 11:50:20,595 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 11:50:21,943 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 11:50:21,944 [INFO] __main__: PATH EXIST ?True
+2025-09-19 11:50:22,552 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 11:50:22,552 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:50:22,552 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:50:22,604 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 11:50:22,604 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 11:50:22,922 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-09-19 11:50:22,922 [DEBUG] __main__: Input model_height : 224
+2025-09-19 11:50:22,922 [DEBUG] __main__: Input model_width : 224
+2025-09-19 11:50:22,927 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-19 11:50:22,927 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-19 11:50:22,928 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 11:50:25,890 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 11:50:25,891 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 11:50:27,775 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 11:50:27,776 [INFO] __main__: PATH EXIST ?True
+2025-09-19 11:50:28,536 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 11:50:28,537 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 11:50:28,542 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 11:50:28,592 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 11:50:28,592 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 11:50:28,973 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-09-19 11:50:28,973 [DEBUG] __main__: Input model_height : 224
+2025-09-19 11:50:28,974 [DEBUG] __main__: Input model_width : 224
+2025-09-19 11:50:28,978 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 11:50:28,981 [INFO] werkzeug:  * Debugger PIN: 384-038-561
+2025-09-19 12:35:26,706 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-19 12:35:26,722 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 12:35:26,724 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 12:35:26,726 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 12:35:29,198 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 12:35:34,200 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 12:35:34,200 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 12:35:35,852 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 12:35:35,856 [INFO] __main__: PATH EXIST ?True
+2025-09-19 12:35:36,824 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 12:35:36,825 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 12:35:36,825 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 12:35:36,875 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 12:35:36,875 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 12:35:37,330 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-09-19 12:35:37,330 [DEBUG] __main__: Input model_height : 224
+2025-09-19 12:35:37,330 [DEBUG] __main__: Input model_width : 224
+2025-09-19 12:35:37,337 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 12:35:37,347 [INFO] werkzeug:  * Debugger PIN: 384-038-561
+2025-09-19 12:36:05,196 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-19 12:36:05,196 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 12:36:05,196 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 12:36:05,197 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 12:36:05,966 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 12:36:08,904 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 12:36:08,904 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 12:36:10,223 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 12:36:10,225 [INFO] __main__: PATH EXIST ?True
+2025-09-19 12:36:10,948 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 12:36:10,949 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 12:36:10,955 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 12:36:10,999 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 12:36:10,999 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 12:36:11,383 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-09-19 12:36:11,383 [DEBUG] __main__: Input model_height : 224
+2025-09-19 12:36:11,383 [DEBUG] __main__: Input model_width : 224
+2025-09-19 12:36:11,387 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 12:36:11,389 [INFO] werkzeug:  * Debugger PIN: 384-038-561
+2025-09-19 14:13:02,233 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 14:13:02] "GET / HTTP/1.1" 200 -
+2025-09-19 14:13:02,346 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 14:13:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-19 14:13:06,524 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x731348bcfc40>
+2025-09-19 14:13:06,526 [INFO] __main__: allowed_file : True
+2025-09-19 14:13:06,596 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-19 14:13:06,596 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-19 14:13:07,259 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 14:13:07] "POST /predict HTTP/1.1" 200 -
+2025-09-19 14:13:18,946 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 14:13:18] "GET /feedback0 HTTP/1.1" 200 -
+2025-09-19 14:13:20,350 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 14:13:20] "GET / HTTP/1.1" 200 -
+2025-09-19 14:13:29,840 [INFO] __main__: input passé dans allowed_file : <function allowed_file at 0x731348bcfc40>
+2025-09-19 14:13:29,840 [INFO] __main__: allowed_file : True
+2025-09-19 14:13:29,848 [INFO] __main__: Type de img_array =<class 'numpy.ndarray'>)
+2025-09-19 14:13:29,848 [INFO] __main__: Shape de img_array =(1, 224, 224, 3)
+2025-09-19 14:13:29,913 [INFO] werkzeug: 127.0.0.1 - - [19/Sep/2025 14:13:29] "POST /predict HTTP/1.1" 200 -
+2025-09-19 14:13:50,784 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 14:13:50,785 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 14:13:50,787 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 14:13:50,945 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 14:13:50,950 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 14:13:50,954 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added

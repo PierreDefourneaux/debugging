@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: pierre
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pierre"]
+      interval: 5s
+      retries: 5
+
+  flask_app:
+    build: .
+    container_name: flask_app
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://pierre:password@db:5432/mydb
+    volumes:
+      - .:/app
+
+# Déclaration du volume nommé
+volumes:
+  postgres_data:
+    driver: local
