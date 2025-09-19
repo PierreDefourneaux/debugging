@@ -111,7 +111,6 @@ def allowed_file(filename: str) -> bool:
     logger.info(f"""allowed_file : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT
 
-
 def to_data_url(pil_img: Image.Image, fmt="JPEG") -> str:
     """Convertit une image PIL en Data URL base64 affichable dans un <img src="...">.
     L’image est encodée en mémoire (sans I/O disque), sérialisée en base64, puis

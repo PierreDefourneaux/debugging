@@ -1711,3 +1711,41 @@
 2025-09-19 14:13:50,945 [INFO] apscheduler.scheduler: Scheduler has been shut down
 2025-09-19 14:13:50,950 [DEBUG] apscheduler.scheduler: Looking for jobs to run
 2025-09-19 14:13:50,954 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 15:03:07,952 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 15:03:07,953 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 15:03:10,066 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 15:03:10,070 [INFO] __main__: PATH EXIST ?True
+2025-09-19 15:03:11,021 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 15:03:11,022 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 15:03:11,022 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 15:03:11,075 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 15:03:11,075 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 15:03:11,837 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-09-19 15:03:11,837 [DEBUG] __main__: Input model_height : 224
+2025-09-19 15:03:11,837 [DEBUG] __main__: Input model_width : 224
+2025-09-19 15:03:11,844 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-19 15:03:11,844 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-09-19 15:03:11,845 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 15:03:14,957 [INFO] __main__: Logger configuré avec succès (info)
+2025-09-19 15:03:14,957 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-09-19 15:03:16,502 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-09-19 15:03:16,506 [INFO] __main__: PATH EXIST ?True
+2025-09-19 15:03:17,089 [INFO] apscheduler.scheduler: Scheduler started
+2025-09-19 15:03:17,090 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 15:03:17,090 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 15:03:17,138 [INFO] __main__: Dashboard username configuré: azerty
+2025-09-19 15:03:17,138 [INFO] __main__: Dashboard password configuré: azerty
+2025-09-19 15:03:17,504 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-09-19 15:03:17,504 [DEBUG] __main__: Input model_height : 224
+2025-09-19 15:03:17,504 [DEBUG] __main__: Input model_width : 224
+2025-09-19 15:03:17,508 [WARNING] werkzeug:  * Debugger is active!
+2025-09-19 15:03:17,530 [INFO] werkzeug:  * Debugger PIN: 384-038-561
+2025-09-19 15:05:41,903 [INFO] werkzeug:  * Detected change in '/home/pierre/debugger/app/app.py', reloading
+2025-09-19 15:05:41,904 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 15:05:41,904 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 15:05:41,904 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
+2025-09-19 15:05:43,228 [INFO] werkzeug:  * Restarting with stat
+2025-09-19 15:05:45,369 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-09-19 15:05:45,370 [DEBUG] apscheduler.scheduler: Looking for jobs to run
+2025-09-19 15:05:45,370 [DEBUG] apscheduler.scheduler: No jobs; waiting until a job is added
