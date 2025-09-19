@@ -2,7 +2,6 @@ import os
 import io
 import base64
 
-
 from flask import Flask, render_template, request, redirect, url_for
 import flask_monitoringdashboard as dashboard
 
@@ -17,7 +16,6 @@ from PIL import Image
 
 import logging
 from logging.handlers import SMTPHandler
-
 
 LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
 # = /home/pierre/debugger/logs
