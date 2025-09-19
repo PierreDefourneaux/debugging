@@ -6,3 +6,4 @@ pillow
 gunicorn
 pytest
 flask_monitoringdashboard
+python-dotenv
