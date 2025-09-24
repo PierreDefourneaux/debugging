@@ -1,4 +1,28 @@
+"""
+Module principal de l'application Flask pour la classification d'images.
+
+Ce module contient :
+- La configuration de Flask et SQLAlchemy pour la base PostgreSQL.
+- Le chargement du modèle Keras pour la prédiction d'images.
+- La configuration du logging et alerting par mail.
+- Les routes Flask pour :
+    - la page d'accueil et l'upload d'image ("/")
+    - la prédiction d'image ("/predict")
+    - le feedback utilisateur ("/feedback")
+- Les fonctions utilitaires pour :
+    - vérifier les extensions de fichiers autorisées
+    - convertir les images PIL en Data URL
+    - prétraiter les images pour le modèle Keras
+
+Notes :
+- Les templates HTML sont dans `templates/`.
+- Dashboard de monitoring Flask intégré via `flask_monitoringdashboard`.
+"""
+
 import os
+os.environ["KERAS_BACKEND"] = "torch"
+import keras
+
 import io
 import base64
 
@@ -11,8 +35,7 @@ from werkzeug.utils import secure_filename
 
 import numpy as np
 
-os.environ["KERAS_BACKEND"] = "torch"
-import keras
+
 
 from PIL import Image
 
