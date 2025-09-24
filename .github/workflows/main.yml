@@ -10,13 +10,14 @@ jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
-      - name: recup le foutu code
+      - name: recupération du code avec une action checkoutv4
         uses: actions/checkout@v4
-      - name: mais on est où là ?
+      - name: afficher le dossier d'exécution avec pwd
         run: pwd
-      - name: Lister les fichiers et dossiers
+      - name: Lister les fichiers et dossiers enfants avec ls-la
         run: ls -la
   pylint:
+    needs: debug # ne se lance qu'après le job debug
     runs-on: ubuntu-latest
     steps:
       # Récupération du code
@@ -48,9 +49,10 @@ jobs:
       # Lancer pylint
       - name: Run pylint
         run: |
-          pylint app/  
+          pylint app/app.py
 
   unit-tests:
+    needs: pylint # ne se lance qu'après le job pylint
     runs-on: ubuntu-latest
     steps:
       # Récupération du code avec une action officielle de GitHub (la v4 en l'occurrence)
