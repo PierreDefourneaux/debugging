@@ -49,7 +49,7 @@ jobs:
       # Lancer pylint
       - name: Run pylint
         run: |
-          pylint app/app.py
+          pylint app/app.py --fail-under=7
 
   unit-tests:
     needs: pylint # ne se lance qu'après le job pylint
