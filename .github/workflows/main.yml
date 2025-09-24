@@ -61,7 +61,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r app/requirements.txt
       - name: Exécuter les tests unitaires
-        run: pytest -vv /tests_unitaires
+        run: pytest -vv tests_unitaires
   deploy_job:
     needs: unit-tests
     runs-on: ubuntu-latest
@@ -70,3 +70,27 @@ jobs:
         uses: actions/checkout@v4
       - name: Deploy
         run: echo "Déploiement ici..."
+  integration-tests:
+    needs: deploy_job
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Récupération du code avec une GitHub action
+      #   uses: actions/checkout@v4
+      # - name: Installer Python avec une action github
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '3.12'
+      # - name: Restaurer le cache pip
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: ~/.cache/pip
+      #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-pip-
+      # - name: Installer les dépendances
+        # run: |
+          # python -m pip install --upgrade pip
+          # pip install -r app/requirements.txt
+      - name: Exécuter les tests d'intégration
+        # run: pytest -vv /_integration_tests
+        run: echo "test d'intégration ici..."
