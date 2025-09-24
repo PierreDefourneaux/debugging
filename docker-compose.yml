@@ -3,14 +3,15 @@ services:
     image: postgres:15
     container_name: postgres_db
     restart: always
-    environment:
+    environment: # Docker Compose version 2.38.2 va automatiquement lire le fichier .env et injecter les valeurs dans la configuration
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_USER: pierre
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydb
+      POSTGRES_DB: pierre
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U pierre"]
       interval: 5s
@@ -25,7 +26,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DATABASE_URL=postgresql://pierre:password@db:5432/mydb
+      - DATABASE_URL=postgresql://pierre:password@db:5432/pierre
     volumes:
       - .:/app
 

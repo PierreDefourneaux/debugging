@@ -11,33 +11,30 @@
     </style>
   </head>
   <body>
-    <h1>Résultat</h1>
+    <h1>Résultat pour cette image :</h1>
     <img src="{{ image_data_url }}" alt="submitted image" />
+    <!-- <img src="data:image/jpeg;base64,{{ base64_only }}" alt="Image" /> -->
     <h2>Classe prédite : {{ predicted_label }}</h2>
     <p>Confiance : {{ '%.3f'|format(confidence) }}</p>
-
-    <div>
-      {% for c in classes %}
-        <button class="pill" disabled>{{ c }}</button>
-      {% endfor %}
-    </div>
 
     
     <form method="post" action="/result">
       <label>Envoyer un feedback positif</label>
-      <p><a class="btn" href="/feedback1">Envoyer un feedback : le modèle a bien prédit</a></p>
-      <p>{{variable_que_je_tente_de_passer}}</p>
-      <input type="text" name="name" required>
-      <input type="text" name="ma_variable_a_recuperer" value="{{ ma_variable_sur_la_page }}" hidden>
-      <button type="submit">Envoyer</button>
+      <input type="hidden" name="base64_data" value="{{ base64_only }}">
+      <p><a class="btn" href="/feedback">Le modèle a bien prédit la classe {{ predicted_label }}</a></p>
     </form>
 
     <form method="post" action="/result">
       <label>Envoyer un feedback negatif</label>
-      <p><a class="btn" href="/feedback0">Envoyer un feedback : le modèle a mal prédit</a></p>
-      <input type="text" name="name" required>
-      <input type="text" name="ma_variable_a_recuperer" value="{{ ma_variable_sur_la_page }}" hidden>
-      <button type="submit">Envoyer</button>
+      <input type="hidden" name="base64_data" value="{{ base64_only }}">
+      <div>
+        {% for c in classes %}
+          <p><a class="btn" href="/feedback">Le modèle aurait dû prédire la classe {{ c }}</a></p>
+        {% endfor %}
+      </div>
+      
+      <!-- <input type="text" name="name" required>
+      <input type="text" name="ma_variable_a_recuperer" value="{{ ma_variable_sur_la_page }}" hidden> -->
     </form>
 
     <p><a href="/">↩︎ Revenir</a></p>

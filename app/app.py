@@ -5,6 +5,8 @@ import base64
 from flask import Flask, render_template, request, redirect, url_for
 import flask_monitoringdashboard as dashboard
 
+from flask_sqlalchemy import SQLAlchemy
+
 from werkzeug.utils import secure_filename
 
 import numpy as np
@@ -32,10 +34,11 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-import dotenv
+
 from dotenv import load_dotenv
 load_dotenv()
 MDP_GOOGLE = os.getenv("MDP_GOOGLE")
+POSTGRES_PASSWORD = os.getenv("MDP_GOOGLE")
 
 # ---------------- Config alerting mail ----------------
 mail_handler = SMTPHandler(
@@ -65,10 +68,13 @@ ALLOWED_EXT = {"png", "jpg", "jpeg", "webp"}
 CLASSES = ['desert', 'forest', 'meadow', 'mountain']
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://pierre:password@db:5432/pierre"
+db = SQLAlchemy(app)
+
 
 logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""") 
 dashboard.config.init_from(file='/home/pierre/debugger/config.cfg')
-dashboard.bind(app)
+
 logger.info(f"Dashboard username configuré: {dashboard.config.username}")
 logger.info(f"Dashboard password configuré: {dashboard.config.password}")
 
@@ -86,6 +92,11 @@ except Exception as e:
     # insersion d'un alerting déclenché par un logger de niveau critical
     logger.critical(f"Impossible de charger le modèle {MODEL_PATH}: {e}", exc_info=True)
     raise # faire remonter l'erreur et arreter l'app maintenant
+
+with app.app_context():
+    result = db.session.execute("SELECT datname FROM pg_database WHERE datistemplate = false;")
+    for row in result:
+        logger.info(f"""Voila une base de PGSQL :{row[0]}""")
 
 
 # ---------------- Utils ----------------
@@ -183,7 +194,8 @@ def predict():
 
     Returns:
         Réponse HTML rendant "result.html" avec:
-        - `image_data_url` : image soumise encodée (base64),
+        - `image_data_url` : image soumise encodée (data:image/jpeg;base64,+chaine base64),
+        - `base64_only` : seulement la chaine base 64
         - `predicted_label` : classe prédite (str),
         - `confidence` : score softmax (float),
         - `classes` : liste des classes (pour les boutons).
@@ -206,30 +218,23 @@ def predict():
     cls_idx = int(np.argmax(probs))
     label = CLASSES[cls_idx]
     conf = float(probs[cls_idx])
-    variable_que_je_tente_de_passer = "PAYLOAD!"
-
 
     image_data_url = to_data_url(pil_img, fmt="JPEG")
+    base64_only = image_data_url.split(',')[1]
 
-    return render_template("result.html", variable_que_je_tente_de_passer = variable_que_je_tente_de_passer ,image_data_url=image_data_url, predicted_label=label, confidence=conf, classes=CLASSES)
+    return render_template("result.html", image_data_url=image_data_url, base64_only = base64_only ,predicted_label=label, confidence=conf, classes=CLASSES)
 
-@app.route("/feedback1", methods=["GET"])
-def feedback_1():
+@app.route("/feedback", methods=["GET"])
+def feedback():
     """Affiche la page de confirmation de feedback (placeholder).
 
     Returns:
         Réponse HTML rendant le template "feedback_ok.html".
     """
-    return render_template("feedback_ok.html")
+    base64_only = request.form.get('base64_data', '')
+    return render_template("feedback_ok.html",base64_only = base64_only)
 
-@app.route("/feedback0", methods=["GET"])
-def feedback_0():
-    """Affiche la page de confirmation de feedback (placeholder).
-
-    Returns:
-        Réponse HTML rendant le template "feedback_ok.html".
-    """
-    return render_template("feedback_ok.html")
+dashboard.bind(app)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
