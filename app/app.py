@@ -28,9 +28,8 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     handlers=[
         logging.FileHandler(LOG_FILE, encoding="utf-8"),  # Écrit dans log/app.log
-        logging.StreamHandler()  # Continue d'afficher dans la console (stdout/stderr)
-    ]
-)
+        logging.StreamHandler()])  # Continue d'afficher dans la console (stdout/stderr)
+
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +45,7 @@ mail_handler = SMTPHandler(
     fromaddr="pierre.defourneaux@gmail.com",
     toaddrs=["pierre.defourneaux@gmail.com"],
     subject=" CRITICAL error in Flask app",
-    credentials=("pierre.defourneaux@gmail.com", MDP_GOOGLE),  
+    credentials=("pierre.defourneaux@gmail.com", MDP_GOOGLE),
     secure=() # secure de SMTPHandler sert à activer une connexion chiffrée avec le serveur SMTP
 )
 mail_handler.setLevel(logging.CRITICAL) # déclencher à partir de critical
@@ -61,7 +60,6 @@ print(f"print Current working dir: {os.getcwd()}")
 for file in os.listdir():
     print("file dans le dossier :",file)
 
-
 # ---------------- Config ----------------
 UPLOAD_FOLDER = "static/uploads"
 ALLOWED_EXT = {"png", "jpg", "jpeg", "webp"}
@@ -71,8 +69,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://pierre:password@db:5432/pierre"
 db = SQLAlchemy(app)
 
-
-logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""") 
+logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""")
 dashboard.config.init_from(file='/home/pierre/debugger/config.cfg')
 
 logger.info(f"Dashboard username configuré: {dashboard.config.username}")
@@ -98,7 +95,6 @@ with app.app_context():
     for row in result:
         logger.info(f"""Voila une base de PGSQL :{row[0]}""")
 
-
 # ---------------- Utils ----------------
 def allowed_file(filename: str) -> bool:
     """Vérifie si le nom de fichier possède une extension autorisée.
@@ -119,7 +115,8 @@ def allowed_file(filename: str) -> bool:
         False
     """
     logger.info(f"input passé dans allowed_file : {allowed_file}")
-    logger.info(f"""allowed_file : {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
+    logger.info(f"""allowed_file:
+        {"." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT}""")
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT
 
 def to_data_url(pil_img: Image.Image, fmt="JPEG") -> str:
@@ -203,7 +200,7 @@ def predict():
 
     if "file" not in request.files:
         return redirect("/")
-    
+
     file = request.files["file"]
     if file.filename == "" or not allowed_file(secure_filename(file.filename)):
         return redirect("/")
@@ -211,7 +208,7 @@ def predict():
     raw = file.read()
     pil_img = Image.open(io.BytesIO(raw))
     img_array = preprocess_from_pil(pil_img)
-    
+
     logger.info(f"Type de img_array ={type(img_array)})")
     logger.info(f"Shape de img_array ={img_array.shape}")
     probs = model.predict(img_array, verbose=0)[0]
@@ -222,7 +219,12 @@ def predict():
     image_data_url = to_data_url(pil_img, fmt="JPEG")
     base64_only = image_data_url.split(',')[1]
 
-    return render_template("result.html", image_data_url=image_data_url, base64_only = base64_only ,predicted_label=label, confidence=conf, classes=CLASSES)
+    return render_template("result.html",
+        image_data_url=image_data_url,
+        base64_only = base64_only,
+        predicted_label=label,
+        confidence=conf,
+        classes=CLASSES)
 
 @app.route("/feedback", methods=["GET"])
 def feedback():
