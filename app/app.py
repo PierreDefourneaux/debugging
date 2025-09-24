@@ -20,30 +20,27 @@ Notes :
 """
 
 import os
-os.environ["KERAS_BACKEND"] = "torch"
-import keras
-
 import io
 import base64
-
-from flask import Flask, render_template, request, redirect, url_for
-import flask_monitoringdashboard as dashboard
-
-from flask_sqlalchemy import SQLAlchemy
-
-from werkzeug.utils import secure_filename
-
-import numpy as np
-
-
-
-from PIL import Image
-
 import logging
 from logging.handlers import SMTPHandler
 
+os.environ["KERAS_BACKEND"] = "torch"
+import keras
+import numpy as np
+from PIL import Image
+from flask import Flask, render_template, request, redirect, url_for
+from werkzeug.utils import secure_filename
+import flask_monitoringdashboard as dashboard
+from flask_sqlalchemy import SQLAlchemy
+from dotenv import load_dotenv
+
+load_dotenv()
+MDP_GOOGLE = os.getenv("MDP_GOOGLE")
+POSTGRES_PASSWORD = os.getenv("MDP_GOOGLE")
+
+# --------------------------------------- Config logging ------------------------------------------
 LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
-# = /home/pierre/debugger/logs
 # la variable spéciale __file__ contient le chemin du fichier Python en cours d’exécution
 LOG_FILE = os.path.join(LOG_DIR, "app.log")
 logging.basicConfig(
@@ -52,15 +49,7 @@ logging.basicConfig(
     handlers=[
         logging.FileHandler(LOG_FILE, encoding="utf-8"),  # Écrit dans log/app.log
         logging.StreamHandler()])  # Continue d'afficher dans la console (stdout/stderr)
-
-
 logger = logging.getLogger(__name__)
-
-
-from dotenv import load_dotenv
-load_dotenv()
-MDP_GOOGLE = os.getenv("MDP_GOOGLE")
-POSTGRES_PASSWORD = os.getenv("MDP_GOOGLE")
 
 # ---------------- Config alerting mail ----------------
 mail_handler = SMTPHandler(
@@ -73,15 +62,8 @@ mail_handler = SMTPHandler(
 )
 mail_handler.setLevel(logging.CRITICAL) # déclencher à partir de critical
 logger.addHandler(mail_handler)
-
-logger.info("Logger configuré avec succès (info)")
 logger.critical("Ceci est un test CRITICAL pour recevoir un mail")
-
 logger.info(f"cwd pour savoir comment atteindre le config file cfg :{os.getcwd()}")
-# prints pour affichage dans github actions
-print(f"print Current working dir: {os.getcwd()}")
-for file in os.listdir():
-    print("file dans le dossier :",file)
 
 # ---------------- Config ----------------
 UPLOAD_FOLDER = "static/uploads"
@@ -89,7 +71,7 @@ ALLOWED_EXT = {"png", "jpg", "jpeg", "webp"}
 CLASSES = ['desert', 'forest', 'meadow', 'mountain']
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://pierre:password@db:5432/pierre"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://pierre:{POSTGRES_PASSWORD}@db:5432/pierre"
 db = SQLAlchemy(app)
 
 logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""")
