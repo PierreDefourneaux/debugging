@@ -37,7 +37,7 @@ jobs:
 
       # Exécuter les tests
       - name: Run tests
-        run: pytest -vv app/tests/tests_unitaires/test_app.py
+        run: pytest -vv /tests/tests_unitaires
 
   deploy_job:
     needs: unit-tests # ne se lance que si tests_job a réussi
