@@ -71,6 +71,8 @@ jobs:
       - name: Build and start containers
         run: docker compose up --build -d
         #le -d (détaché) est nécessaire, sinon l’action bloque car les conteneurs restent au premier plan.
+        env:
+          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}  
       - name: Show running containers
         run: docker ps -a
 # Attention : par défaut, les jobs GitHub Actions tournent dans des runners séparés. Donc les conteneurs lancés dans deploy_job ne sont pas accessibles dans integration-tests.
