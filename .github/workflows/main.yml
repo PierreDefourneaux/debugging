@@ -71,7 +71,7 @@ jobs:
       - name: Log in to DockerHub
         uses: docker/login-action@v3
         with:
-          username: pierredefourneaux
+          username: pierre.defourneaux@gmail.com
           password: dckr_pat_nbP66FNxUhGmvzixmYYt__5m6dg
       - name: Build and start containers
         run: docker compose up --build -d
