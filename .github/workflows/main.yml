@@ -71,8 +71,6 @@ jobs:
           echo "DOCKERHUB_USERNAME length: ${#DOCKERHUB_USERNAME}"
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      - name: Create .env
-        run: echo "POSTGRES_PASSWORD=${{ secrets.DOCKERHUB_USERNAME }}" > .env
       - name: Récupérer le code
         uses: actions/checkout@v4
       - name: Log in to DockerHub
