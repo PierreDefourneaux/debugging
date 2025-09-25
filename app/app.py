@@ -39,7 +39,7 @@ load_dotenv()
 MDP_GOOGLE = os.getenv("MDP_GOOGLE")
 POSTGRES_PASSWORD = os.getenv("MDP_GOOGLE")
 
-# --------------------------------------- Config logging ------------------------------------------
+# --------------------------------------- Config logging -----------------------------------------
 LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
 # la variable spéciale __file__ contient le chemin du fichier Python en cours d’exécution
 LOG_FILE = os.path.join(LOG_DIR, "app.log")
