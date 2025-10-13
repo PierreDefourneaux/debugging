@@ -82,7 +82,7 @@ jobs:
       
       - name: Build and start containers
         run: docker compose up --build -d
-        #le -d (détaché) est nécessaire, sinon l’action bloque car les conteneurs restent au premier plan.
+        #le -d (détaché) est nécessaire, sinon l’action bloque car les conteneurs restent au premier plan
       - name: Show running containers
         run: |
           echo "Conteneurs lancés:"
