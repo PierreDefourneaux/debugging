@@ -104,9 +104,6 @@ def get_databases():
 if __name__ == "__main__":
     get_databases()
 
-
-
-
 # ---------------- Utils ----------------
 def allowed_file(filename: str) -> bool:
     """Vérifie si le nom de fichier possède une extension autorisée.

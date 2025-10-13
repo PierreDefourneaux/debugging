@@ -67,7 +67,7 @@ jobs:
           pip install -r app/requirements.txt
       - name: Exécuter les tests unitaires
         run: pytest -vv tests_unitaires
-  build_job:
+  build_docker_containers:
     needs: [unit-tests, pylint, debug]
     runs-on: ubuntu-latest
     steps:
@@ -92,7 +92,7 @@ jobs:
 # Garder tout (deploy + tests d’intégration) dans un seul job.
 # Utiliser un service container GitHub Actions pour la DB/webapp.
   integration-tests:
-    needs: build_job
+    needs: build_docker_containers
     runs-on: ubuntu-latest
     steps:
       - name: Récupération du code avec une GitHub action
