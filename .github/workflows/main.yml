@@ -79,7 +79,9 @@ jobs:
         env:
           POSTGRES_PASSWORD: AzertyuioP1!
       - name: Show running containers
-        run: docker ps -a
+        run: |
+          echo "Conteneurs :"
+          docker ps -a
 # Attention : par défaut, les jobs GitHub Actions tournent dans des runners séparés. Donc les conteneurs lancés dans deploy_job ne sont pas accessibles dans integration-tests.
 # Deux solutions :
 # Garder tout (deploy + tests d’intégration) dans un seul job.
