@@ -6,7 +6,8 @@ import random
 from PIL import Image
 from app.app import preprocess_from_pil
 
-# S'assurer que le bug de format ne se répète plus et soit bien adapté à celui attendu par keras
+# S'assurer que le bug de format ne se répète plus 
+# et que le format soit bien adapté à celui attendu par keras
 def test_preprocessed_shape_from_random_values():
     n1 = random.randint(1, 1000)
     n2 = random.randint(1, 1000)
