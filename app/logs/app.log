@@ -2734,3 +2734,28 @@
 2025-09-24 18:40:19,272 [INFO] __main__: Logger configuré avec succès (info)
 2025-09-24 18:40:19,273 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
 2025-09-24 18:40:21,410 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-13 23:20:37,412 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-10-13 23:20:38,807 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-13 23:24:00,184 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-10-13 23:24:01,084 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-13 23:24:01,157 [INFO] __main__: PATH EXIST ?True
+2025-10-13 23:24:01,196 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-13 23:24:01,197 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-13 23:24:02,419 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-13 23:24:02,419 [DEBUG] __main__: Input model_height : 224
+2025-10-13 23:24:02,419 [DEBUG] __main__: Input model_width : 224
+2025-10-13 23:30:14,828 [CRITICAL] __main__: Ceci est un test CRITICAL pour recevoir un mail
+2025-10-13 23:30:15,999 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-13 23:30:16,065 [INFO] __main__: PATH EXIST ?True
+2025-10-13 23:30:16,066 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-13 23:30:16,066 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-13 23:30:16,889 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-13 23:30:16,889 [DEBUG] __main__: Input model_height : 224
+2025-10-13 23:30:16,889 [DEBUG] __main__: Input model_width : 224
+2025-10-13 23:36:08,791 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-13 23:36:08,831 [INFO] __main__: PATH EXIST ?True
+2025-10-13 23:36:08,832 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-13 23:36:08,832 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-13 23:36:09,769 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-13 23:36:09,769 [DEBUG] __main__: Input model_height : 224
+2025-10-13 23:36:09,769 [DEBUG] __main__: Input model_width : 224

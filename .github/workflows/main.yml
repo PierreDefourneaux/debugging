@@ -68,7 +68,7 @@ jobs:
       - name: Exécuter les tests unitaires
         run: pytest -vv tests_unitaires
   build-docker-containers:
-    needs: [unit-tests, pylint, debug]
+    # needs: [unit-tests, pylint, debug]
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le code

@@ -33,6 +33,7 @@ from flask import Flask, render_template, request, redirect
 from werkzeug.utils import secure_filename
 import flask_monitoringdashboard as dashboard
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import text
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -62,7 +63,6 @@ mail_handler = SMTPHandler(
 )
 mail_handler.setLevel(logging.CRITICAL) # déclencher à partir de critical
 logger.addHandler(mail_handler)
-logger.critical("Ceci est un test CRITICAL pour recevoir un mail")
 logger.info(f"cwd pour savoir comment atteindre le config file cfg :{os.getcwd()}")
 
 # ---------------- Config ----------------
@@ -71,7 +71,7 @@ ALLOWED_EXT = {"png", "jpg", "jpeg", "webp"}
 CLASSES = ['desert', 'forest', 'meadow', 'mountain']
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://pierre:{POSTGRES_PASSWORD}@db:5432/pierre"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://pierre:{POSTGRES_PASSWORD}@db:5432/pierre"
 db = SQLAlchemy(app)
 
 logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""")
@@ -98,7 +98,8 @@ except Exception as e:
 
 def get_databases():
     with app.app_context():
-        result = db.session.execute("SELECT datname FROM pg_database WHERE datistemplate = false;")
+        result = db.session.execute(
+            text("SELECT datname FROM pg_database WHERE datistemplate = false;"))
         for row in result:
             logger.info(f"""Voila une base de PGSQL :{row[0]}""")
 if __name__ == "__main__":
