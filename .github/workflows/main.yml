@@ -68,7 +68,7 @@ jobs:
           pip install -r app/requirements.txt
       - name: Exécuter les tests unitaires
         run: pytest -vv tests_unitaires
-  deploy_job:
+  build_job:
     needs: unit-tests 
     runs-on: ubuntu-latest
     steps:
@@ -88,31 +88,37 @@ jobs:
         run: |
           echo "Conteneurs :"
           docker ps -a
-# Attention : par défaut, les jobs GitHub Actions tournent dans des runners séparés. Donc les conteneurs lancés dans deploy_job ne sont pas accessibles dans integration-tests.
+# Attention : par défaut, les jobs GitHub Actions tournent dans des runners séparés. Donc les conteneurs lancés dans build_job ne sont pas accessibles dans integration-tests.
 # Deux solutions :
 # Garder tout (deploy + tests d’intégration) dans un seul job.
 # Utiliser un service container GitHub Actions pour la DB/webapp.
   integration-tests:
-    needs: deploy_job
+    needs: build_job
     runs-on: ubuntu-latest
     steps:
-      # - name: Récupération du code avec une GitHub action
-      #   uses: actions/checkout@v4
-      # - name: Installer Python avec une action github
-      #   uses: actions/setup-python@v5
-      #   with:
-      #     python-version: '3.12'
-      # - name: Restaurer le cache pip
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: ~/.cache/pip
-          # key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-pip-
-      # - name: Installer les dépendances
-        # run: |
-          # python -m pip install --upgrade pip
-          # pip install -r app/requirements.txt
+      - name: Récupération du code avec une GitHub action
+        uses: actions/checkout@v4
+      - name: Installer Python avec une action github
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restaurer le cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Installer les dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r app/requirements.txt
       - name: Exécuter les tests d'intégration
-        # run: pytest -vv /_integration_tests
-        run: echo "test d'intégration ici..."
+        run: pytest -vv /_integration_tests
+
+  deploy-on-Render:
+    needs: integration-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: déploiement sur render
+        run: echo "Ici le dépoiement sur Render... Si la version gratuite permet le déploiement de plusieurs conteneurs..."
