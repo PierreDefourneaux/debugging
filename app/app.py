@@ -29,7 +29,7 @@ os.environ["KERAS_BACKEND"] = "torch"
 import keras
 import numpy as np
 from PIL import Image
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, jsonify
 from werkzeug.utils import secure_filename
 import flask_monitoringdashboard as dashboard
 from flask_sqlalchemy import SQLAlchemy
@@ -245,6 +245,10 @@ def feedback():
     """
     base64_only = request.form.get('base64_data', '')
     return render_template("feedback_ok.html",base64_only = base64_only)
+
+@app.route("/health")
+def health():
+    return jsonify(status="ok"), 200
 
 dashboard.bind(app)
 

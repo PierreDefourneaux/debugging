@@ -20,7 +20,7 @@ load_dotenv()
 # commencer par tester si les conteneurs sont lancés
 def test_postgres_ctn(max_retries=10, delay=2):
     """
-    Teste si le conteneur PostgreSQL est accessible.
+    Teste si le conteneur PostgreSQL est accessible par le runner.
     """
     for _ in range(max_retries):
         try:
@@ -39,7 +39,18 @@ def test_postgres_ctn(max_retries=10, delay=2):
 
     assert False, "Le conteneur PostgreSQL n'est pas accessible."
 
-# def test_ctn_flask():
+def test_ctn_flask():
+    """Vérifie que l'API Flask réponde."""
+    success = False
+    url = "http://localhost:5000/health"
+    for _ in range(10):
+            response = requests.get(url)
+            if response.status_code == 200:
+                success = True
+                break
+            else:
+                time.sleep(2)
+    assert success, "Le conteneur Flask ne répond pas après le délai imparti."
 
 # @pytest.fixture
 # def client():
