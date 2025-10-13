@@ -95,10 +95,17 @@ except Exception as e:
     logger.critical(f"Impossible de charger le modèle {MODEL_PATH}: {e}", exc_info=True)
     raise # faire remonter l'erreur et arreter l'app maintenant
 
-with app.app_context():
-    result = db.session.execute("SELECT datname FROM pg_database WHERE datistemplate = false;")
-    for row in result:
-        logger.info(f"""Voila une base de PGSQL :{row[0]}""")
+
+def get_databases():
+    with app.app_context():
+        result = db.session.execute("SELECT datname FROM pg_database WHERE datistemplate = false;")
+        for row in result:
+            logger.info(f"""Voila une base de PGSQL :{row[0]}""")
+if __name__ == "__main__":
+    get_databases()
+
+
+
 
 # ---------------- Utils ----------------
 def allowed_file(filename: str) -> bool:
