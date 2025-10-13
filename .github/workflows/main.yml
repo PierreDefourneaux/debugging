@@ -46,7 +46,6 @@ jobs:
         run: |
           pylint app/app.py --fail-under=7
   unit-tests:
-    needs: [pylint, debug]
     runs-on: ubuntu-latest
     steps:
       - name: Récupération du code avec une GitHub action
