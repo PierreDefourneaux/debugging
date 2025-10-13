@@ -67,8 +67,9 @@ jobs:
           pip install -r app/requirements.txt
       - name: Exécuter les tests unitaires
         run: pytest -vv tests_unitaires
+
   build-docker-containers:
-    # needs: [unit-tests, pylint, debug]
+    needs: [unit-tests, pylint, debug]
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le code
@@ -76,13 +77,11 @@ jobs:
       - name: Log in to DockerHub
         uses: docker/login-action@v3
         with:
-          username: pierre.defourneaux@gmail.com
-          password: dckr_pat_nbP66FNxUhGmvzixmYYt__5m6dg
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build and start containers
         run: docker compose up --build -d
         #le -d (détaché) est nécessaire, sinon l’action bloque car les conteneurs restent au premier plan.
-        env:
-          POSTGRES_PASSWORD: AzertyuioP1!
       - name: Show running containers
         run: |
           echo "Conteneurs :"
