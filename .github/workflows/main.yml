@@ -68,7 +68,7 @@ jobs:
       - name: Exécuter les tests unitaires
         run: pytest -vv tests_unitaires
 
-  build-docker-containers:
+  docker-compose-integration-test:
     needs: [unit-tests, pylint, debug]
     runs-on: ubuntu-latest
     steps:
@@ -85,18 +85,10 @@ jobs:
         #le -d (détaché) est nécessaire, sinon l’action bloque car les conteneurs restent au premier plan.
       - name: Show running containers
         run: |
-          echo "Conteneurs :"
+          echo "Conteneurs lancés:"
+          docker ps
+          echo "Conteneurs lancés et arrêtés:"
           docker ps -a
-# Attention : par défaut, les jobs GitHub Actions tournent dans des runners séparés. Donc les conteneurs lancés dans build_job ne sont pas accessibles dans integration-tests.
-# Deux solutions :
-# Garder tout (deploy + tests d’intégration) dans un seul job.
-# Utiliser un service container GitHub Actions pour la DB/webapp.
-  integration-tests:
-    needs: build-docker-containers
-    runs-on: ubuntu-latest
-    steps:
-      - name: Récupération du code avec une GitHub action
-        uses: actions/checkout@v4
       - name: Installer Python avec une action github
         uses: actions/setup-python@v5
         with:
@@ -116,7 +108,7 @@ jobs:
         run: pytest -vv integration_tests
 
   deploy-on-Render:
-    needs: integration-tests
+    needs: docker-compose-integration-test
     runs-on: ubuntu-latest
     steps:
       - name: déploiement sur render

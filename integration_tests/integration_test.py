@@ -25,7 +25,7 @@ def test_postgres_ctn(max_retries=10, delay=2):
     for _ in range(max_retries):
         try:
             conn = psycopg2.connect(
-                host="db",
+                host="localhost",
                 port="5432",
                 dbname="pierre",
                 user="pierre",
