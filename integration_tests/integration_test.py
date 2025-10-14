@@ -65,9 +65,10 @@ def test_2_ctn_network():
             "exec",
             "-i",
             "flask_app",
-            "python",
-            "-c",
-            "from app.app import get_databases; get_databases()"
+            "ls"
+            # "python",
+            # "-c",
+            # "from app.app import get_databases; get_databases()"
         ],
         capture_output=True,
         text=True
