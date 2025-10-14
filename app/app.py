@@ -38,7 +38,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 MDP_GOOGLE = os.getenv("MDP_GOOGLE")
-POSTGRES_PASSWORD = os.getenv("MDP_GOOGLE")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 
 # --------------------------------------- Config logging -----------------------------------------
 LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
