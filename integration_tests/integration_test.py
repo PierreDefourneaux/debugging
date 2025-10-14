@@ -86,20 +86,6 @@ def test_2_ctn_network():
     )
     print("Voici le résutat du python --version:", result2.stdout)
 
-    result3 = subprocess.run(
-        [
-            "docker",
-            "exec",
-            "-i",
-            "flask_app",
-            "python3",
-            "--version",
-        ],
-        capture_output=True,
-        text=True
-    )
-    print("Voici le résutat du python3 --version:", result3.stdout)
-
     result4 = subprocess.run(
         ["docker", "exec", "-i", "flask_app", "ls", "app"],
         capture_output=True,
@@ -112,6 +98,7 @@ def test_2_ctn_network():
     capture_output=True,
     text=True
     )
+    print("Voici les résultats de printenv POSTGRES_PASSWORD:")
     print("STDOUT:", result5.stdout)
     print("STDERR:", result5.stderr)
     print("Return code:", result5.returncode)
@@ -124,7 +111,7 @@ def test_2_ctn_network():
     capture_output=True,
     text=True
     )
-
+    print("Voici les résultats de get_databases():")
     print("STDOUT:", result6.stdout)
     print("STDERR:", result6.stderr)
     print("Return code:", result6.returncode)
