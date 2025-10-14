@@ -100,6 +100,13 @@ def test_2_ctn_network():
     )
     print("Voici le résutat du python3 --version:", result3.stdout)
 
+    result4 = subprocess.run(
+        ["docker", "exec", "-i", "flask_app", "ls", "app"],
+        capture_output=True,
+        text=True
+    )
+    print("Voici le résutat du ls app:", result4.stdout)
+
 
     # "python",
         # "-c",
