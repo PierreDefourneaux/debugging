@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 import requests
 import psycopg2
 from psycopg2 import OperationalError
+import subprocess
 
 load_dotenv()
 
@@ -55,27 +56,24 @@ def test_flask_app_in_its_ctn():
     
     assert success, "Le conteneur Flask ne répond pas après le délai imparti."
 
-def test_2_ctn_network():
-    """Vérifie que l'API depuis son prompre conteneur comumnique avec PGsql dans le sien ."""
-    url = "http://localhost:5000/health"
-    success = False
-    for _ in range(10):
-        try:
-            response = requests.get(url)
-            if response.status_code == 200:
-                success = True
-                break
-        except requests.exceptions.RequestException:
-            pass  # ignore les erreurs de connexion temporaires
-        time.sleep(10)  # attente avant le prochain essai
-    
-    assert success, "Le conteneur Flask ne répond pas après le délai imparti."
 
-# @pytest.fixture
-# def client():
-#     flask_app.config["TESTING"] = True
-#     with flask_app.test_client() as client:
-#         yield client
+def test_2_ctn_network():
+    """Vérifie que l'API depuis son propre conteneur comumnique avec PGSQL dans le sien ."""
+    result = subprocess.run(
+        [
+            "docker",
+            "exec",
+            "-i",
+            "flask_app",
+            "python",
+            "-c",
+            "from app.app import get_databases; get_databases()"
+        ],
+        capture_output=True,
+        text=True
+    )
+    print(result.stdout)
+    assert result.returncode == 0
 
 # # Tester le fonctionnement de l'API avec une requête GET sur la page d'accueil (route "/")
 # def test_flask1(client):
