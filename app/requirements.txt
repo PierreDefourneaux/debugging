@@ -9,3 +9,4 @@ flask_monitoringdashboard
 python-dotenv
 flask_sqlalchemy
 psycopg2-binary
+requests==2.32.1

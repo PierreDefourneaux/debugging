@@ -41,15 +41,18 @@ def test_postgres_ctn(max_retries=10, delay=2):
 
 def test_ctn_flask():
     """Vérifie que l'API Flask réponde."""
-    success = False
     url = "http://localhost:5000/health"
+    success = False
     for _ in range(10):
+        try:
             response = requests.get(url)
             if response.status_code == 200:
                 success = True
                 break
-            else:
-                time.sleep(2)
+        except requests.exceptions.RequestException:
+            pass  # ignore les erreurs de connexion temporaires
+        time.sleep(10)  # attente avant le prochain essai
+    
     assert success, "Le conteneur Flask ne répond pas après le délai imparti."
 
 # @pytest.fixture

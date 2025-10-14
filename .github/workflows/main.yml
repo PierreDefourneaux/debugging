@@ -72,6 +72,7 @@ jobs:
     needs: [unit-tests, pylint, debug]
     runs-on: ubuntu-latest
     steps:
+
     - name: Récupérer le code
       uses: actions/checkout@v4
 
@@ -80,27 +81,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-
-    # Restaurer le cache Docker
-    - name: Restaurer le cache Docker
-      uses: actions/cache@v3
-      with:
-        path: /tmp/.buildx-cache
-        key: ${{ runner.os }}-docker-${{ github.sha }}
-        restore-keys: |
-          ${{ runner.os }}-docker-
-
-    - name: Installer Docker Buildx
-      uses: docker/setup-buildx-action@v3
-
-    - name: Build images avec cache
-      run: |
-        docker buildx build \
-          --build-arg POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} \
-          --cache-from=type=gha \
-          --cache-to=type=gha,mode=max \
-          -t myapp:latest \
-          -f Dockerfile .
 
     - name: Démarrer les conteneurs avec docker-compose
       run: docker compose up -d
@@ -129,6 +109,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r app/requirements.txt
+
+    - name: Verifier que Flask s'est pas cassé la gueule depuis 3 min
+      run: |
+        echo "Conteneurs lancés:"
+        docker ps
+        echo "Conteneurs lancés et arrêtés:"
+        docker ps -a
 
     - name: Exécuter les tests d'intégration
       run: pytest -vv -W ignore::DeprecationWarning integration_tests
