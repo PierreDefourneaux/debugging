@@ -97,6 +97,7 @@ except Exception as e:
 
 
 def get_databases():
+    logger.info("Tentative de récupération de noms de bases dans le serveur PGSQL:")
     with app.app_context():
         result = db.session.execute(
             text("SELECT datname FROM pg_database WHERE datistemplate = false;"))

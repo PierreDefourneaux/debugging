@@ -3,7 +3,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import pytest
 from app.app import app as flask_app
-from app.app import preprocess_from_pil
+from app.app import preprocess_from_pil, get_databases
 from PIL import Image
 import numpy as np
 import random
@@ -16,9 +16,7 @@ from psycopg2 import OperationalError
 
 load_dotenv()
 
-# integration_test.py lancé avec pytest -vv :
-# commencer par tester si les conteneurs sont lancés
-def test_postgres_ctn(max_retries=10, delay=2):
+def test_postgres_in_its_ctn(max_retries=10, delay=2):
     """
     Teste si le conteneur PostgreSQL est accessible par le runner.
     """
@@ -39,8 +37,26 @@ def test_postgres_ctn(max_retries=10, delay=2):
 
     assert False, "Le conteneur PostgreSQL n'est pas accessible."
 
-def test_ctn_flask():
-    """Vérifie que l'API Flask réponde."""
+def test_flask_app_in_its_ctn():
+    """
+    Vérifie que l'API Flask réponde.
+    """
+    url = "http://localhost:5000/health"
+    success = False
+    for _ in range(10):
+        try:
+            response = requests.get(url)
+            if response.status_code == 200:
+                success = True
+                break
+        except requests.exceptions.RequestException:
+            pass  # ignore les erreurs de connexion temporaires
+        time.sleep(10)  # attente avant le prochain essai
+    
+    assert success, "Le conteneur Flask ne répond pas après le délai imparti."
+
+def test_2_ctn_network():
+    """Vérifie que l'API depuis son prompre conteneur comumnique avec PGsql dans le sien ."""
     url = "http://localhost:5000/health"
     success = False
     for _ in range(10):
