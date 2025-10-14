@@ -27,12 +27,9 @@ services:
         condition: service_healthy
     ports:
       - "5000:5000"
-    environment:
-      - DATABASE_URL=postgresql://pierre:${POSTGRES_PASSWORD}@db:5432/pierre
     volumes:
       - .:/app
 
-# Déclaration du volume nommé
 volumes:
   postgres_data:
     driver: local

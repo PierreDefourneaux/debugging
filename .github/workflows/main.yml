@@ -66,6 +66,8 @@ jobs:
   build-and-integration-tests:
     # needs: [unit-tests, pylint]
     runs-on: ubuntu-latest
+    env:
+      POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
     steps:
 
     - name: Récupérer le code
