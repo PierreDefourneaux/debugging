@@ -73,7 +73,7 @@ def test_2_ctn_network():
         capture_output=True,
         text=True
     )
-    print(result.stdout)
+    print("Voici le résutat du ls:", result.stdout)
     assert result.returncode == 0
 
 # # Tester le fonctionnement de l'API avec une requête GET sur la page d'accueil (route "/")
