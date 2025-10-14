@@ -107,6 +107,15 @@ def test_2_ctn_network():
     )
     print("Voici le résutat du ls app:", result4.stdout)
 
+    result5 = subprocess.run(
+        ["docker", "exec", "-i", "flask_app", "python", "-c","from app.app import get_databases"],
+        capture_output=True,
+        text=True
+    )
+    print("Voici les résutat de python -c from app.app import get_databases:")
+    print("STDOUT:", result5.stdout)
+    print("STDERR:", result5.stderr)
+    print("Return code:", result5.returncode)
 
     # "python",
         # "-c",
