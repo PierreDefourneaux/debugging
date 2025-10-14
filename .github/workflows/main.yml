@@ -92,6 +92,11 @@ jobs:
         echo "Conteneurs lancés et arrêtés:"
         docker ps -a
 
+    - name: Attendre que Flask soit prêt
+      run: |
+        echo "Attente que Flask écoute sur le port 5000..."
+        timeout 60 bash -c 'until curl -s http://localhost:5000/health; do sleep 2; done'
+
     - name: Installer Python avec une action github
       uses: actions/setup-python@v5
       with:
