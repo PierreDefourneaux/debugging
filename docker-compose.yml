@@ -19,6 +19,8 @@ services:
 
   flask_app:
     build: .
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     container_name: flask_app
     depends_on:
       db:
