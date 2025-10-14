@@ -117,9 +117,19 @@ def test_2_ctn_network():
     print("STDERR:", result5.stderr)
     print("Return code:", result5.returncode)
 
-    # "python",
-        # "-c",
-        # "from app.app import get_databases; get_databases()"
+    result6 = subprocess.run(
+    [
+        "docker", "exec", "-i", "flask_app", "python", "-c",
+        "from app.app import get_databases; get_databases()"
+    ],
+    capture_output=True,
+    text=True
+    )
+
+    print("STDOUT:", result6.stdout)
+    print("STDERR:", result6.stderr)
+    print("Return code:", result6.returncode)
+
     assert result.returncode == 0
 
 # # Tester le fonctionnement de l'API avec une requête GET sur la page d'accueil (route "/")
