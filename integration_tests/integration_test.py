@@ -66,14 +66,44 @@ def test_2_ctn_network():
             "-i",
             "flask_app",
             "ls"
-            # "python",
-            # "-c",
-            # "from app.app import get_databases; get_databases()"
         ],
         capture_output=True,
         text=True
     )
     print("Voici le résutat du ls:", result.stdout)
+
+    result2 = subprocess.run(
+        [
+            "docker",
+            "exec",
+            "-i",
+            "flask_app",
+            "python",
+            "--version",
+        ],
+        capture_output=True,
+        text=True
+    )
+    print("Voici le résutat du python --version:", result2.stdout)
+
+    result3 = subprocess.run(
+        [
+            "docker",
+            "exec",
+            "-i",
+            "flask_app",
+            "python3",
+            "--version",
+        ],
+        capture_output=True,
+        text=True
+    )
+    print("Voici le résutat du python3 --version:", result3.stdout)
+
+
+    # "python",
+        # "-c",
+        # "from app.app import get_databases; get_databases()"
     assert result.returncode == 0
 
 # # Tester le fonctionnement de l'API avec une requête GET sur la page d'accueil (route "/")
