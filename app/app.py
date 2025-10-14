@@ -184,7 +184,6 @@ def index():
     return render_template("upload.html")
 
 
-
 @app.route("/predict", methods=["POST"])
 def predict():
     """Traite l’upload, exécute la prédiction et affiche le résultat.
