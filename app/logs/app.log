@@ -2766,3 +2766,280 @@
 2025-10-13 23:29:30,873 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
 2025-10-13 23:29:30,873 [DEBUG] __main__: Input model_height : 224
 2025-10-13 23:29:30,873 [DEBUG] __main__: Input model_width : 224
+2025-10-14 15:54:57,155 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-14 15:54:57,239 [INFO] __main__: PATH EXIST ?True
+2025-10-14 15:54:57,242 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-14 15:54:57,242 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-14 15:54:57,723 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-14 15:54:57,723 [DEBUG] __main__: Input model_height : 224
+2025-10-14 15:54:57,723 [DEBUG] __main__: Input model_width : 224
+2025-10-14 15:54:57,723 [INFO] __main__: Tentative de récupération de noms de bases dans le serveur PGSQL:
+2025-10-14 16:26:55,769 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-14 16:26:55,845 [INFO] __main__: PATH EXIST ?True
+2025-10-14 16:26:55,848 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-14 16:26:55,848 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-14 16:26:56,346 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-14 16:26:56,347 [DEBUG] __main__: Input model_height : 224
+2025-10-14 16:26:56,347 [DEBUG] __main__: Input model_width : 224
+2025-10-14 16:26:56,347 [INFO] __main__: Tentative de récupération de noms de bases dans le serveur PGSQL:
+2025-10-14 23:20:43,952 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-14 23:20:44,070 [INFO] __main__: PATH EXIST ?True
+2025-10-14 23:20:44,073 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-14 23:20:44,073 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-14 23:20:45,461 [DEBUG] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-14 23:20:45,461 [DEBUG] __main__: Input model_height : 224
+2025-10-14 23:20:45,461 [DEBUG] __main__: Input model_width : 224
+2025-10-14 23:20:45,461 [INFO] __main__: Tentative de récupération de noms de bases dans le serveur PGSQL:
+2025-10-14 23:21:10,923 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-14 23:21:10,963 [INFO] __main__: PATH EXIST ?True
+2025-10-14 23:21:10,964 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-14 23:21:10,964 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-14 23:21:11,939 [INFO] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-14 23:21:11,939 [INFO] __main__: Input model_height : 224
+2025-10-14 23:21:11,940 [INFO] __main__: Input model_width : 224
+2025-10-14 23:21:11,940 [INFO] __main__: Tentative de récupération de noms de bases dans le serveur PGSQL:
+2025-10-16 23:52:54,470 [INFO] __main__: cwd pour savoir comment atteindre le config file cfg :/home/pierre/debugger
+2025-10-16 23:52:54,584 [INFO] __main__: PATH EXIST ?True
+2025-10-16 23:52:54,588 [INFO] __main__: Dashboard username configuré: azerty
+2025-10-16 23:52:54,588 [INFO] __main__: Dashboard password configuré: azerty
+2025-10-16 23:52:56,042 [INFO] __main__: model_input_shape : (None, 224, 224, 3)
+2025-10-16 23:52:56,042 [INFO] __main__: Input model_height : 224
+2025-10-16 23:52:56,042 [INFO] __main__: Input model_width : 224
+2025-10-16 23:52:56,043 [INFO] __main__: Tentative de récupération de noms de bases dans le serveur PGSQL:
+2025-10-16 22:08:40,340 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-16 22:08:40,530 [INFO] app.app: PATH EXIST ?False
+2025-10-16 22:08:40,531 [INFO] app.app: Dashboard username configuré: admin
+2025-10-16 22:08:40,531 [INFO] app.app: Dashboard password configuré: admin
+2025-10-16 22:08:40,863 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-16 22:08:40,863 [INFO] app.app: Input model_height : 224
+2025-10-16 22:08:40,863 [INFO] app.app: Input model_width : 224
+2025-10-16 22:08:42,318 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-16 22:15:02,333 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e6be67be050>
+2025-10-16 22:15:02,334 [INFO] app.app: allowed_file:
+        True
+2025-10-16 22:15:02,386 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-16 22:15:02,387 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-16 22:15:02,500 [ERROR] app.app: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/PIL/JpegImagePlugin.py", line 662, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/site-packages/flask_monitoringdashboard/core/measurement.py", line 167, in wrapper
+    raise raised_exception
+  File "/usr/local/lib/python3.10/site-packages/flask_monitoringdashboard/core/measurement.py", line 107, in evaluate
+    result = route_handler(*args, **kwargs)
+  File "/app/app/app.py", line 228, in predict
+    image_data_url = to_data_url(pil_img, fmt="JPEG")
+  File "/app/app/app.py", line 153, in to_data_url
+    pil_img.save(buffer, format=fmt)
+  File "/usr/local/lib/python3.10/site-packages/PIL/Image.py", line 2571, in save
+    save_handler(self, fp, filename)
+  File "/usr/local/lib/python3.10/site-packages/PIL/JpegImagePlugin.py", line 665, in _save
+    raise OSError(msg) from e
+OSError: cannot write mode RGBA as JPEG
+2025-10-16 22:22:05,858 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e6be67be050>
+2025-10-16 22:22:05,858 [INFO] app.app: allowed_file:
+        True
+2025-10-16 22:22:05,870 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-16 22:22:05,871 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-16 22:22:41,221 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e6be67be050>
+2025-10-16 22:22:41,222 [INFO] app.app: allowed_file:
+        True
+2025-10-16 22:22:41,311 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-16 22:22:41,314 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-16 22:22:59,800 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_survey_filled [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_survey_filled' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:23:01,030 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_telemetry_answered [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_telemetry_answered' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:24:00,582 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_survey_filled [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_survey_filled' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:24:02,057 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_telemetry_answered [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_telemetry_answered' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:27:17,684 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_survey_filled [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_survey_filled' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:27:18,373 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_telemetry_answered [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_telemetry_answered' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:28:25,500 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_survey_filled [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_survey_filled' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:28:26,958 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_telemetry_answered [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_telemetry_answered' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:36:46,172 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_survey_filled [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_survey_filled' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-16 22:36:47,021 [ERROR] app.app: Exception on /dashboard/telemetry/get_is_telemetry_answered [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'dashboard.get_is_telemetry_answered' did not return a valid response. The function either returned None or ended without a return statement.
+2025-10-17 14:49:55,997 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-17 14:49:56,098 [INFO] app.app: PATH EXIST ?False
+2025-10-17 14:49:56,099 [INFO] app.app: Dashboard username configuré: admin
+2025-10-17 14:49:56,099 [INFO] app.app: Dashboard password configuré: admin
+2025-10-17 14:49:56,371 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-17 14:49:56,371 [INFO] app.app: Input model_height : 224
+2025-10-17 14:49:56,371 [INFO] app.app: Input model_width : 224
+2025-10-17 14:49:57,331 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-19 14:23:48,408 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-19 14:23:48,481 [INFO] app.app: PATH EXIST ?False
+2025-10-19 14:23:48,482 [INFO] app.app: Dashboard username configuré: admin
+2025-10-19 14:23:48,482 [INFO] app.app: Dashboard password configuré: admin
+2025-10-19 14:23:48,755 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-19 14:23:48,755 [INFO] app.app: Input model_height : 224
+2025-10-19 14:23:48,755 [INFO] app.app: Input model_width : 224
+2025-10-19 14:23:50,045 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-19 14:23:57,336 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e147e5ba050>
+2025-10-19 14:23:57,338 [INFO] app.app: allowed_file:
+        True
+2025-10-19 14:23:57,397 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-19 14:23:57,400 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-19 14:23:57,599 [ERROR] app.app: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/PIL/JpegImagePlugin.py", line 662, in _save
+    rawmode = RAWMODE[im.mode]
+KeyError: 'RGBA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/usr/local/lib/python3.10/site-packages/flask_monitoringdashboard/core/measurement.py", line 167, in wrapper
+    raise raised_exception
+  File "/usr/local/lib/python3.10/site-packages/flask_monitoringdashboard/core/measurement.py", line 107, in evaluate
+    result = route_handler(*args, **kwargs)
+  File "/app/app/app.py", line 228, in predict
+    image_data_url = to_data_url(pil_img, fmt="JPEG")
+  File "/app/app/app.py", line 153, in to_data_url
+    pil_img.save(buffer, format=fmt)
+  File "/usr/local/lib/python3.10/site-packages/PIL/Image.py", line 2571, in save
+    save_handler(self, fp, filename)
+  File "/usr/local/lib/python3.10/site-packages/PIL/JpegImagePlugin.py", line 665, in _save
+    raise OSError(msg) from e
+OSError: cannot write mode RGBA as JPEG
+2025-10-19 14:24:28,413 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-19 14:24:32,004 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-19 14:24:32,044 [INFO] app.app: PATH EXIST ?False
+2025-10-19 14:24:32,045 [INFO] app.app: Dashboard username configuré: admin
+2025-10-19 14:24:32,045 [INFO] app.app: Dashboard password configuré: admin
+2025-10-19 14:24:32,229 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-19 14:24:32,229 [INFO] app.app: Input model_height : 224
+2025-10-19 14:24:32,229 [INFO] app.app: Input model_width : 224
+2025-10-19 14:24:32,678 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-19 14:24:39,712 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e147e5d4160>
+2025-10-19 14:24:39,713 [INFO] app.app: allowed_file:
+        True
+2025-10-19 14:24:39,785 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-19 14:24:39,786 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-19 14:25:10,542 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-19 14:25:13,943 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-19 14:25:13,981 [INFO] app.app: PATH EXIST ?False
+2025-10-19 14:25:13,982 [INFO] app.app: Dashboard username configuré: admin
+2025-10-19 14:25:13,982 [INFO] app.app: Dashboard password configuré: admin
+2025-10-19 14:25:14,155 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-19 14:25:14,156 [INFO] app.app: Input model_height : 224
+2025-10-19 14:25:14,156 [INFO] app.app: Input model_width : 224
+2025-10-19 14:25:14,545 [INFO] apscheduler.scheduler: Scheduler started

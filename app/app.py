@@ -45,7 +45,7 @@ LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
 # la variable spéciale __file__ contient le chemin du fichier Python en  cours d’exécution
 LOG_FILE = os.path.join(LOG_DIR, "app.log")
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     handlers=[
         logging.FileHandler(LOG_FILE, encoding="utf-8"),  # Écrit dans log/app.log
@@ -87,11 +87,10 @@ try:
     model_input_shape = model.input_shape
     model_height = model_input_shape[1]
     model_width =  model_input_shape[2]
-    logger.debug(f"model_input_shape : {model_input_shape}")
-    logger.debug(f"Input model_height : {model_height}")
-    logger.debug(f"Input model_width : {model_width}")
+    logger.info(f"model_input_shape : {model_input_shape}")
+    logger.info(f"Input model_height : {model_height}")
+    logger.info(f"Input model_width : {model_width}")
 except Exception as e:
-    # insersion d'un alerting déclenché par un logger de niveau critical
     logger.critical(f"Impossible de charger le modèle {MODEL_PATH}: {e}", exc_info=True)
     raise # faire remonter l'erreur et arreter l'app maintenant
 
@@ -102,7 +101,7 @@ def get_databases():
         result = db.session.execute(
             text("SELECT datname FROM pg_database WHERE datistemplate = false;"))
         for row in result:
-            logger.info(f"""Voila une base de PGSQL :{row[0]}""")
+            logger.info(f"""Base récupérée dans le SGBD POSTGRESQL :{row[0]}""")
 if __name__ == "__main__":
     get_databases()
 

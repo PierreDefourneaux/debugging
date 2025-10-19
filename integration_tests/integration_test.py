@@ -118,22 +118,7 @@ def test_2_ctn_network():
 
     assert result.returncode == 0
 
-# # Tester le fonctionnement de l'API avec une requête GET sur la page d'accueil (route "/")
-# def test_flask1(client):
-#     response = client.get("/")
-#     assert response.status_code == 200
 
-# def test_flask2(client):
-#     """Attend que l'API Flask réponde."""
-#     url = "http://localhost:5000/health"
-#     for _ in range(10):
-#         try:
-#             response = requests.get(url)
-#             if response.status_code == 200:
-#                 return True
-#         except Exception:
-#             time.sleep(2)
-#     raise RuntimeError("Flask ne répond pas après le délai imparti.")
     
 # # S'assurer que le bug de format ne se répète plus et soit bien adapté à celui attendu par keras
 # def test_format_img_():
