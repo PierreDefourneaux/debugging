@@ -12,108 +12,104 @@ env:
   POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
     
 jobs:
-  # pylint:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Récupération du code
-  #       uses: actions/checkout@v4
-  #     - name: pwd
-  #       run: pwd
-  #     - name: ls-la
-  #       run: ls -la
-  #     - name: Installer Python
-  #       uses: actions/setup-python@v5
-  #       with:
-  #         python-version: '3.12'
-  #     - name: Restaurer le cache pip
-  #       uses: actions/cache@v3
-  #       with:
-  #         path: ~/.cache/pip
-  #         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-  #         restore-keys: |
-  #           ${{ runner.os }}-pip-
-  #     - name: Install pylint et les requirements
-  #       run: |
-  #         python -m pip install --upgrade pip
-  #         pip install pylint
-  #         pip install -r app/requirements.txt
-  #     - name: Lancer pylint
-  #       run: |
-  #         pylint app/app.py --fail-under=7
-  # unit-tests:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Récupération du code avec une GitHub action
-  #       uses: actions/checkout@v4
-  #     - name: Installer Python avec une action github
-  #       uses: actions/setup-python@v5
-  #       with:
-  #         python-version: '3.12'
-  #     - name: Restaurer le cache pip
-  #       uses: actions/cache@v3
-  #       with:
-  #         path: ~/.cache/pip
-  #         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-  #         restore-keys: |
-  #           ${{ runner.os }}-pip-
-  #     - name: Installer les dépendances
-  #       run: |
-  #         python -m pip install --upgrade pip
-  #         pip install -r app/requirements.txt
-  #     - name: Exécuter les tests unitaires
-  #       run: pytest -s -vv -W ignore::DeprecationWarning tests_unitaires
+  pylint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir pylint -r app/requirements.txt
+
+      - name: Lancer pylint
+        run: pylint app/app.py --fail-under=7
+
+      - name: Nettoyer l’espace disque
+        if: always()
+        run: |
+          rm -rf ~/.cache/pip
+          df -h
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir -r app/requirements.txt
+          
+
+      - name: Exécuter les tests unitaires
+        run: pytest -s -vv -W ignore::DeprecationWarning tests_unitaires
+
+      - name: Nettoyer l’espace disque
+        if: always()
+        run: |
+          rm -rf ~/.cache/pip
+          df -h
 
   build-and-integration-tests:
-    # needs: [unit-tests, pylint]
+    needs: [unit-tests, pylint]
     runs-on: ubuntu-latest
     env:
       POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
     steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
 
-    - name: Récupérer le code
-      uses: actions/checkout@v4
+      - name: Log in to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Log in to DockerHub
-      uses: docker/login-action@v3
-      with:
-        username: ${{ secrets.DOCKER_USER }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Démarrer les conteneurs avec docker-compose
+        run: docker compose up -d
 
-    - name: Démarrer les conteneurs avec docker-compose
-      run: docker compose up -d
+      - name: Vérifier les conteneurs
+        run: docker ps -a
 
-    - name: Show running containers
-      run: |
-        echo "Conteneurs lancés:"
-        docker ps
-        echo "Conteneurs lancés et arrêtés:"
-        docker ps -a
+      - name: Attendre que Flask soit prêt
+        run: |
+          echo "Attente que Flask écoute sur le port 5000..."
+          timeout 60 bash -c 'until curl -s http://localhost:5000/health; do sleep 2; done'
 
-    - name: Attendre que Flask soit prêt
-      run: |
-        echo "Attente que Flask écoute sur le port 5000..."
-        timeout 60 bash -c 'until curl -s http://localhost:5000/health; do sleep 2; done'
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-    - name: Installer Python avec une action github
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.12'
+      - name: Installer dépendances lourdes uniquement ici
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir -r app/requirements.txt
+          pip install --no-cache-dir torch keras pytest
 
-    - name: Restaurer le cache pip
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+      - name: Exécuter les tests d'intégration
+        run: pytest -s -vv -W ignore::DeprecationWarning integration_tests
 
-    - name: Installer les dépendances
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r app/requirements.txt
-
-    - name: Exécuter les tests d'intégration
-      run: pytest -s -vv -W ignore::DeprecationWarning integration_tests
+      - name: Nettoyer Docker et pip
+        if: always()
+        run: |
+          docker compose down -v --rmi all
+          docker system prune -af
+          rm -rf ~/.cache/pip
+          df -h
 
 
   deploy-on-Render:
