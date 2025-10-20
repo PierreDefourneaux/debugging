@@ -15,7 +15,7 @@ jobs:
   pylint:
     runs-on: ubuntu-latest
     steps:
-      - name: Log runner resources1
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -34,7 +34,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --no-cache-dir pylint -r app/requirements.txt
 
-      - name: Log runner resources2
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -49,7 +49,7 @@ jobs:
           rm -rf ~/.cache/pip
           df -h
 
-      - name: Log runner resources3
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -58,7 +58,7 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Log runner resources4
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -72,7 +72,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Log runner resources5
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -83,7 +83,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --no-cache-dir -r app/requirements.txt
 
-      - name: Log runner resources6
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -99,7 +99,7 @@ jobs:
           rm -rf ~/.cache/pip
           df -h
       
-      - name: Log runner resources7
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -112,7 +112,24 @@ jobs:
       POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
     steps:
 
-      - name: Log runner resources8
+      - name: Log runner resources
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
+      - name: Nettoyage disque avant Docker Compose
+        run: |
+          echo "=== Nettoyage pip cache ==="
+          rm -rf ~/.cache/pip
+          echo "=== Nettoyage Docker ==="
+          docker compose down --rmi all -v
+          docker system prune -af
+          echo "=== Vérification disque ==="
+          df -h
+          docker system df
+
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -130,7 +147,7 @@ jobs:
       - name: Démarrer les conteneurs avec docker-compose
         run: docker compose up -d
       
-      - name: Log runner resources9
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
@@ -149,7 +166,7 @@ jobs:
         with:
           python-version: '3.12'
       
-      - name: Log runner resources10
+      - name: Log runner resources
         run: |
           echo "=== Disque ==="; df -h
           echo "=== RAM ==="; free -h
