@@ -3106,3 +3106,11 @@ OSError: cannot write mode RGBA as JPEG
 2025-10-20 20:07:44,258 [INFO] app.app: Input model_width : 224
 2025-10-20 20:07:44,745 [INFO] apscheduler.scheduler: Scheduler started
 2025-10-20 20:27:04,487 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-20 21:31:51,016 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-20 21:31:51,157 [INFO] app.app: PATH EXIST ?False
+2025-10-20 21:31:51,158 [INFO] app.app: Dashboard username configuré: admin
+2025-10-20 21:31:51,158 [INFO] app.app: Dashboard password configuré: admin
+2025-10-20 21:31:51,525 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-20 21:31:51,525 [INFO] app.app: Input model_height : 224
+2025-10-20 21:31:51,526 [INFO] app.app: Input model_width : 224
+2025-10-20 21:31:53,016 [INFO] apscheduler.scheduler: Scheduler started

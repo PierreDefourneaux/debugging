@@ -15,6 +15,12 @@ jobs:
   pylint:
     runs-on: ubuntu-latest
     steps:
+      - name: Log runner resources1
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
       - name: Récupération du code
         uses: actions/checkout@v4
 
@@ -28,6 +34,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install --no-cache-dir pylint -r app/requirements.txt
 
+      - name: Log runner resources2
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
       - name: Lancer pylint
         run: pylint app/app.py --fail-under=7
 
@@ -37,9 +49,21 @@ jobs:
           rm -rf ~/.cache/pip
           df -h
 
+      - name: Log runner resources3
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
   unit-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Log runner resources4
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
       - name: Récupération du code
         uses: actions/checkout@v4
 
@@ -48,10 +72,22 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Log runner resources5
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
       - name: Installer dépendances
         run: |
           python -m pip install --upgrade pip
           pip install --no-cache-dir -r app/requirements.txt
+
+      - name: Log runner resources6
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
           
 
       - name: Exécuter les tests unitaires
@@ -62,6 +98,12 @@ jobs:
         run: |
           rm -rf ~/.cache/pip
           df -h
+      
+      - name: Log runner resources7
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
 
   build-and-integration-tests:
     needs: [unit-tests, pylint]
@@ -69,6 +111,13 @@ jobs:
     env:
       POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
     steps:
+
+      - name: Log runner resources8
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
+
       - name: Récupérer le code
         uses: actions/checkout@v4
 
@@ -80,6 +129,12 @@ jobs:
 
       - name: Démarrer les conteneurs avec docker-compose
         run: docker compose up -d
+      
+      - name: Log runner resources9
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
 
       - name: Vérifier les conteneurs
         run: docker ps -a
@@ -93,6 +148,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      
+      - name: Log runner resources10
+        run: |
+          echo "=== Disque ==="; df -h
+          echo "=== RAM ==="; free -h
+          echo "=== Docker ==="; docker system df
 
       - name: Installer dépendances lourdes uniquement ici
         run: |
