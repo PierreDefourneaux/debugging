@@ -29,7 +29,7 @@ os.environ["KERAS_BACKEND"] = "torch"
 import keras
 import numpy as np
 from PIL import Image
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, render_template, request, redirect, jsonify, session
 from werkzeug.utils import secure_filename
 import flask_monitoringdashboard as dashboard
 from flask_sqlalchemy import SQLAlchemy
@@ -39,6 +39,7 @@ from dotenv import load_dotenv
 load_dotenv()
 MDP_GOOGLE = os.getenv("MDP_GOOGLE")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+APP_SECRET_KEY = os.getenv("APP_SECRET_KEY")
 
 # --------------------------------------- Config logging -----------------------------------------
 LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
@@ -71,6 +72,7 @@ ALLOWED_EXT = {"png", "jpg", "jpeg", "webp"}
 CLASSES = ['desert', 'forest', 'meadow', 'mountain']
 
 app = Flask(__name__)
+app.secret_key = APP_SECRET_KEY
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://pierre:{POSTGRES_PASSWORD}@db:5432/pierre"
 db = SQLAlchemy(app)
 
@@ -245,7 +247,7 @@ def feedback():
     """
     predicted_label = request.form.get('predicted_label', '')
     base64_only = request.form.get('base64_data', '')
-    return render_template("feedback_ok.html",base64_only = base64_only)
+    return render_template("feedback_ok.html")
 
 @app.route("/health")
 def health():
