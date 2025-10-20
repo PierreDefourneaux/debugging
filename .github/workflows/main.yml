@@ -122,9 +122,6 @@ jobs:
         run: |
           echo "=== Nettoyage pip cache ==="
           rm -rf ~/.cache/pip
-          echo "=== Nettoyage Docker ==="
-          docker compose down --rmi all -v
-          docker system prune -af
           echo "=== Vérification disque ==="
           df -h
           docker system df
