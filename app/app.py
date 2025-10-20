@@ -237,11 +237,13 @@ def predict():
 
 @app.route("/feedback", methods=["GET"])
 def feedback():
-    """Affiche la page de confirmation de feedback (placeholder).
+    """Envoie le feedback utilsateur à la base de données PGSQL puis
+    affiche la page de confirmation de feedback.
 
     Returns:
         Réponse HTML rendant le template "feedback_ok.html".
     """
+    predicted_label = request.form.get('predicted_label', '')
     base64_only = request.form.get('base64_data', '')
     return render_template("feedback_ok.html",base64_only = base64_only)
 

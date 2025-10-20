@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY app/requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+
+RUN pip install --upgrade pip setuptools wheel && \
+    pip install -r requirements.txt
 
 # Copier le reste du projet en excluant les dossiers cachés et l'environnement virtuel
 # On utilise .dockerignore pour gérer ces exclusions
