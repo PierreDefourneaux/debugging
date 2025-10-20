@@ -3105,3 +3105,4 @@ OSError: cannot write mode RGBA as JPEG
 2025-10-20 20:07:44,258 [INFO] app.app: Input model_height : 224
 2025-10-20 20:07:44,258 [INFO] app.app: Input model_width : 224
 2025-10-20 20:07:44,745 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-20 20:27:04,487 [INFO] apscheduler.scheduler: Scheduler has been shut down
