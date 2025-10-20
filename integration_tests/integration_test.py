@@ -2,8 +2,6 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import pytest
-from app.app import app as flask_app
-from app.app import preprocess_from_pil, get_databases
 from PIL import Image
 import numpy as np
 import random

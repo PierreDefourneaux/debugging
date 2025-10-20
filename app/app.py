@@ -230,6 +230,9 @@ def predict():
     image_data_url = to_data_url(pil_img, fmt="JPEG")
     base64_only = image_data_url.split(',')[1]
 
+    session['predicted_label'] = label
+    session['base64_only'] = base64_only
+
     return render_template("result.html",
         image_data_url=image_data_url,
         base64_only = base64_only,

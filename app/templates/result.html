@@ -21,6 +21,7 @@
     <form method="post" action="/result">
       <label>Envoyer un feedback positif</label>
       <input type="hidden" name="base64_data" value="{{ base64_only }}">
+      <input type="hidden" name="expected_prediction" value="{{ predicted_label }}">
       <p><a class="btn" href="/feedback">Le modèle a bien prédit la classe {{ predicted_label }}</a></p>
     </form>
 
@@ -30,6 +31,7 @@
       <div>
         {% for c in classes %}
           <p><a class="btn" href="/feedback">Le modèle aurait dû prédire la classe {{ c }}</a></p>
+          <input type="hidden" name="expected_prediction" value="{{ c }}">
         {% endfor %}
       </div>
       

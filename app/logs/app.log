@@ -3137,3 +3137,17 @@ OSError: cannot write mode RGBA as JPEG
 2025-10-20 21:35:31,420 [INFO] app.app: Input model_height : 224
 2025-10-20 21:35:31,420 [INFO] app.app: Input model_width : 224
 2025-10-20 21:35:31,910 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-20 22:37:49,941 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7896af150310>
+2025-10-20 22:37:49,944 [INFO] app.app: allowed_file:
+        True
+2025-10-20 22:37:50,047 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-20 22:37:50,048 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-20 22:38:20,754 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-20 22:38:26,837 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-20 22:38:26,907 [INFO] app.app: PATH EXIST ?False
+2025-10-20 22:38:26,907 [INFO] app.app: Dashboard username configuré: admin
+2025-10-20 22:38:26,908 [INFO] app.app: Dashboard password configuré: admin
+2025-10-20 22:38:27,096 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-20 22:38:27,096 [INFO] app.app: Input model_height : 224
+2025-10-20 22:38:27,096 [INFO] app.app: Input model_width : 224
+2025-10-20 22:38:27,872 [INFO] apscheduler.scheduler: Scheduler started
