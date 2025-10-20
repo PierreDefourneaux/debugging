@@ -3043,3 +3043,65 @@ OSError: cannot write mode RGBA as JPEG
 2025-10-19 14:25:14,156 [INFO] app.app: Input model_height : 224
 2025-10-19 14:25:14,156 [INFO] app.app: Input model_width : 224
 2025-10-19 14:25:14,545 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-19 17:57:20,674 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e147e5d4160>
+2025-10-19 17:57:20,690 [INFO] app.app: allowed_file:
+        True
+2025-10-19 17:57:20,914 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-19 17:57:20,914 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-19 17:57:21,330 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x7e147e5d4160>
+2025-10-19 17:57:21,331 [INFO] app.app: allowed_file:
+        True
+2025-10-19 17:57:21,375 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-10-19 17:57:21,381 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-10-19 17:57:51,850 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-19 17:58:02,272 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-19 17:58:02,455 [INFO] app.app: PATH EXIST ?False
+2025-10-19 17:58:02,455 [INFO] app.app: Dashboard username configuré: admin
+2025-10-19 17:58:02,456 [INFO] app.app: Dashboard password configuré: admin
+2025-10-19 17:58:02,707 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-19 17:58:02,707 [INFO] app.app: Input model_height : 224
+2025-10-19 17:58:02,707 [INFO] app.app: Input model_width : 224
+2025-10-19 17:58:03,976 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-19 17:59:22,093 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-19 17:59:25,705 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-19 17:59:25,741 [INFO] app.app: PATH EXIST ?False
+2025-10-19 17:59:25,741 [INFO] app.app: Dashboard username configuré: admin
+2025-10-19 17:59:25,741 [INFO] app.app: Dashboard password configuré: admin
+2025-10-19 17:59:25,908 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-19 17:59:25,908 [INFO] app.app: Input model_height : 224
+2025-10-19 17:59:25,908 [INFO] app.app: Input model_width : 224
+2025-10-19 17:59:26,317 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-19 18:06:13,508 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-19 18:06:17,514 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-19 18:06:17,559 [INFO] app.app: PATH EXIST ?False
+2025-10-19 18:06:17,560 [INFO] app.app: Dashboard username configuré: admin
+2025-10-19 18:06:17,560 [INFO] app.app: Dashboard password configuré: admin
+2025-10-19 18:06:17,771 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-19 18:06:17,772 [INFO] app.app: Input model_height : 224
+2025-10-19 18:06:17,772 [INFO] app.app: Input model_width : 224
+2025-10-19 18:06:18,251 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-20 09:51:54,891 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-20 09:51:53,326 [INFO] app.app: PATH EXIST ?False
+2025-10-20 09:51:53,326 [INFO] app.app: Dashboard username configuré: admin
+2025-10-20 09:51:53,327 [INFO] app.app: Dashboard password configuré: admin
+2025-10-20 09:51:53,696 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-20 09:51:53,696 [INFO] app.app: Input model_height : 224
+2025-10-20 09:51:53,696 [INFO] app.app: Input model_width : 224
+2025-10-20 09:51:55,171 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-20 20:02:00,465 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-20 20:02:00,546 [INFO] app.app: PATH EXIST ?False
+2025-10-20 20:02:00,546 [INFO] app.app: Dashboard username configuré: admin
+2025-10-20 20:02:00,546 [INFO] app.app: Dashboard password configuré: admin
+2025-10-20 20:02:00,824 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-20 20:02:00,824 [INFO] app.app: Input model_height : 224
+2025-10-20 20:02:00,824 [INFO] app.app: Input model_width : 224
+2025-10-20 20:02:02,244 [INFO] apscheduler.scheduler: Scheduler started
+2025-10-20 20:07:26,535 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-10-20 20:07:43,992 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-10-20 20:07:44,046 [INFO] app.app: PATH EXIST ?False
+2025-10-20 20:07:44,046 [INFO] app.app: Dashboard username configuré: admin
+2025-10-20 20:07:44,046 [INFO] app.app: Dashboard password configuré: admin
+2025-10-20 20:07:44,258 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-10-20 20:07:44,258 [INFO] app.app: Input model_height : 224
+2025-10-20 20:07:44,258 [INFO] app.app: Input model_width : 224
+2025-10-20 20:07:44,745 [INFO] apscheduler.scheduler: Scheduler started
