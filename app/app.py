@@ -77,7 +77,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://pierre:{POSTGRES_PASSWORD
 db = SQLAlchemy(app)
 
 logger.info(f"cwd = {os.getcwd()}")
-logger.info(f"""PATH EXIST ?{os.path.exists('app/config.cfg')}""")
+logger.info(f"""os.listdir('.') = {os.listdir(".")}""")
+logger.info(f"""PATH EXIST ?{os.path.exists('/app/config.cfg')}""")
 dashboard.config.init_from(file='/home/pierre/debugger/config.cfg')
 
 logger.info(f"Dashboard username configuré: {dashboard.config.username}")

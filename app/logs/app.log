@@ -3494,3 +3494,13 @@ TypeError: 'NoneType' object is not subscriptable
 2025-11-16 11:38:51,126 [INFO] app.app: Input model_width : 224
 2025-11-16 11:38:51,665 [INFO] apscheduler.scheduler: Scheduler started
 2025-11-16 11:47:58,172 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 11:48:57,216 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 11:48:57,277 [INFO] app.app: cwd = /app
+2025-11-16 11:48:57,277 [INFO] app.app: PATH EXIST ?False
+2025-11-16 11:48:57,278 [INFO] app.app: Dashboard username configuré: admin
+2025-11-16 11:48:57,278 [INFO] app.app: Dashboard password configuré: admin
+2025-11-16 11:48:57,588 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 11:48:57,588 [INFO] app.app: Input model_height : 224
+2025-11-16 11:48:57,588 [INFO] app.app: Input model_width : 224
+2025-11-16 11:48:58,194 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 11:53:25,682 [INFO] apscheduler.scheduler: Scheduler has been shut down
