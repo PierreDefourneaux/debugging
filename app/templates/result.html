@@ -18,26 +18,28 @@
     <p>Confiance : {{ '%.3f'|format(confidence) }}</p>
 
     
-    <form method="post" action="/result">
-      <label>Envoyer un feedback positif</label>
+    <h3>Feedback positif</h3>
+    <form method="post" action="/feedback">
+      <input type="hidden" name="predicted_label" value="{{ predicted_label }}">
       <input type="hidden" name="base64_data" value="{{ base64_only }}">
       <input type="hidden" name="expected_prediction" value="{{ predicted_label }}">
-      <p><a class="btn" href="/feedback">Le modèle a bien prédit la classe {{ predicted_label }}</a></p>
+      <button type="submit" class="btn">
+        Le modèle a bien prédit la classe {{ predicted_label }}
+      </button>
     </form>
 
-    <form method="post" action="/result">
-      <label>Envoyer un feedback negatif</label>
-      <input type="hidden" name="base64_data" value="{{ base64_only }}">
-      <div>
-        {% for c in classes %}
-          <p><a class="btn" href="/feedback">Le modèle aurait dû prédire la classe {{ c }}</a></p>
-          <input type="hidden" name="expected_prediction" value="{{ c }}">
-        {% endfor %}
-      </div>
-      
-      <!-- <input type="text" name="name" required>
-      <input type="text" name="ma_variable_a_recuperer" value="{{ ma_variable_sur_la_page }}" hidden> -->
-    </form>
+    <h3>Feedback négatif</h3>
+    {% for c in classes %}
+      <form method="post" action="/feedback">
+        <input type="hidden" name="predicted_label" value="{{ predicted_label }}">
+        <input type="hidden" name="base64_data" value="{{ base64_only }}">
+        <input type="hidden" name="expected_prediction" value="{{ c }}">
+        <button type="submit" class="btn">
+          Le modèle aurait dû prédire la classe {{ c }}
+        </button>
+      </form>
+    {% endfor %}
+
 
     <p><a href="/">↩︎ Revenir</a></p>
   </body>

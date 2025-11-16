@@ -1,1 +1,1 @@
-CREATE DATABASE pierre;
+CREATE DATABASE classifier_feedbacks;

@@ -1,4 +1,4 @@
-# Debugg d'application
+# README : consignes Debugg d'application
 
 Vous disposez d’une application Flask de classification d’images satellite (4 classes : desert, forest, meadow, mountain).
 
@@ -29,3 +29,15 @@ Critères de réussite (checklist) :
 - [ ] Les tests attrapent l’ancien bug et passent en vert après correctif.
 - [ ] La feedback loop enregistre correctement image + prédiction + label utilisateur.
 - [ ] La CI GitHub Actions s’exécute à chaque PR et empêche l’intégration si un test échoue.
+
+# README : instructions en lien avec l'appliction une fois qu'elle est debuggée
+## Travailler en local:  
+docker compose up --build à la racine du projet
+### inspecter la base de données PGQSL
+récupérer l'ID du conteneur pgsql avec la commande  
+docker ps  
+récupérer les credentials  que j'ai mis en variables d'environnement
+docker inspect <n°ID> | grep POSTGRES
+puis rentrer dans le conteneur :
+docker exec -it <n°ID> sh
+et

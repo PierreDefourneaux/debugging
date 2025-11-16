@@ -76,7 +76,8 @@ app.secret_key = APP_SECRET_KEY
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://pierre:{POSTGRES_PASSWORD}@db:5432/pierre"
 db = SQLAlchemy(app)
 
-logger.info(f"""PATH EXIST ?{os.path.exists('/home/pierre/debugger/config.cfg')}""")
+logger.info(f"cwd = {os.getcwd()}")
+logger.info(f"""PATH EXIST ?{os.path.exists('app/config.cfg')}""")
 dashboard.config.init_from(file='/home/pierre/debugger/config.cfg')
 
 logger.info(f"Dashboard username configuré: {dashboard.config.username}")
@@ -240,17 +241,26 @@ def predict():
         confidence=conf,
         classes=CLASSES)
 
-@app.route("/feedback", methods=["GET"])
+@app.route("/feedback", methods=["GET", "POST"])
 def feedback():
-    """Envoie le feedback utilsateur à la base de données PGSQL puis
+    """Envoie le feedback utilisateur à la base de données PGSQL puis
     affiche la page de confirmation de feedback.
-
-    Returns:
-        Réponse HTML rendant le template "feedback_ok.html".
     """
-    predicted_label = request.form.get('predicted_label', '')
-    base64_only = request.form.get('base64_data', '')
-    return render_template("feedback_ok.html")
+    if request.method == "POST":
+        expected_prediction = request.form.get("expected_prediction")
+        base64_only = request.form.get("base64_data")
+        session['expected_prediction'] = expected_prediction
+        predicted_label = request.form.get("predicted_label")
+        debut_base64 = base64_only[:15] if base64_only else "(aucune donnée)"
+
+        return render_template(
+            "feedback_ok.html",
+            predicted_label=predicted_label,
+            base64_only=base64_only,
+            expected_prediction=expected_prediction,
+            debut_base64=debut_base64
+        )
+    return redirect("/")
 
 @app.route("/health")
 def health():
