@@ -79,7 +79,7 @@ db = SQLAlchemy(app)
 logger.info(f"cwd = {os.getcwd()}")
 logger.info(f"""os.listdir('.') = {os.listdir(".")}""")
 logger.info(f"""PATH EXIST ?{os.path.exists('/app/config.cfg')}""")
-dashboard.config.init_from(file='/home/pierre/debugger/config.cfg')
+dashboard.config.init_from(file='/app/config.cfg')
 
 logger.info(f"Dashboard username configuré: {dashboard.config.username}")
 logger.info(f"Dashboard password configuré: {dashboard.config.password}")

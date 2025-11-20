@@ -3504,3 +3504,94 @@ TypeError: 'NoneType' object is not subscriptable
 2025-11-16 11:48:57,588 [INFO] app.app: Input model_width : 224
 2025-11-16 11:48:58,194 [INFO] apscheduler.scheduler: Scheduler started
 2025-11-16 11:53:25,682 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 12:00:28,111 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 12:00:28,159 [INFO] app.app: cwd = /app
+2025-11-16 12:00:28,159 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 12:00:28,160 [INFO] app.app: PATH EXIST ?True
+2025-11-16 12:00:28,161 [INFO] app.app: Dashboard username configuré: admin
+2025-11-16 12:00:28,161 [INFO] app.app: Dashboard password configuré: admin
+2025-11-16 12:00:28,379 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 12:00:28,379 [INFO] app.app: Input model_height : 224
+2025-11-16 12:00:28,379 [INFO] app.app: Input model_width : 224
+2025-11-16 12:00:28,939 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 15:53:43,309 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 15:53:51,740 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 15:53:51,851 [INFO] app.app: cwd = /app
+2025-11-16 15:53:51,852 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 15:53:51,852 [INFO] app.app: PATH EXIST ?True
+2025-11-16 15:53:51,853 [INFO] app.app: Dashboard username configuré: admin
+2025-11-16 15:53:51,853 [INFO] app.app: Dashboard password configuré: admin
+2025-11-16 15:53:52,008 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 15:53:52,008 [INFO] app.app: Input model_height : 224
+2025-11-16 15:53:52,008 [INFO] app.app: Input model_width : 224
+2025-11-16 15:53:53,577 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 15:54:24,183 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 15:54:26,477 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 15:54:26,521 [INFO] app.app: cwd = /app
+2025-11-16 15:54:26,521 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 15:54:26,522 [INFO] app.app: PATH EXIST ?True
+2025-11-16 15:54:26,522 [INFO] app.app: Dashboard username configuré: admin
+2025-11-16 15:54:26,522 [INFO] app.app: Dashboard password configuré: admin
+2025-11-16 15:54:26,647 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 15:54:26,647 [INFO] app.app: Input model_height : 224
+2025-11-16 15:54:26,647 [INFO] app.app: Input model_width : 224
+2025-11-16 15:54:27,183 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 16:09:34,293 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 16:10:07,017 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 16:10:07,126 [INFO] app.app: cwd = /app
+2025-11-16 16:10:07,126 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 16:10:07,127 [INFO] app.app: PATH EXIST ?True
+2025-11-16 16:10:07,130 [INFO] app.app: Dashboard username configuré: azerty
+2025-11-16 16:10:07,131 [INFO] app.app: Dashboard password configuré: azerty
+2025-11-16 16:10:07,419 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 16:10:07,420 [INFO] app.app: Input model_height : 224
+2025-11-16 16:10:07,420 [INFO] app.app: Input model_width : 224
+2025-11-16 16:10:08,981 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 16:18:45,974 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 16:18:46,024 [INFO] app.app: cwd = /app
+2025-11-16 16:18:46,024 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 16:18:46,024 [INFO] app.app: PATH EXIST ?True
+2025-11-16 16:18:46,026 [INFO] app.app: Dashboard username configuré: azerty
+2025-11-16 16:18:46,026 [INFO] app.app: Dashboard password configuré: azerty
+2025-11-16 16:18:46,271 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 16:18:46,271 [INFO] app.app: Input model_height : 224
+2025-11-16 16:18:46,271 [INFO] app.app: Input model_width : 224
+2025-11-16 16:18:46,944 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 16:31:10,904 [INFO] app.app: input passé dans allowed_file : <function allowed_file at 0x793ebd130ca0>
+2025-11-16 16:31:10,905 [INFO] app.app: allowed_file:
+        True
+2025-11-16 16:31:11,017 [INFO] app.app: Type de img_array =<class 'numpy.ndarray'>)
+2025-11-16 16:31:11,018 [INFO] app.app: Shape de img_array =(1, 224, 224, 3)
+2025-11-16 16:44:49,081 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 16:44:51,670 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 16:44:51,712 [INFO] app.app: cwd = /app
+2025-11-16 16:44:51,712 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 16:44:51,712 [INFO] app.app: PATH EXIST ?True
+2025-11-16 16:44:51,714 [INFO] app.app: Dashboard username configuré: azerty
+2025-11-16 16:44:51,714 [INFO] app.app: Dashboard password configuré: azerty
+2025-11-16 16:44:51,848 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 16:44:51,849 [INFO] app.app: Input model_height : 224
+2025-11-16 16:44:51,849 [INFO] app.app: Input model_width : 224
+2025-11-16 16:44:52,413 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 16:48:00,304 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 16:48:17,382 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 16:48:17,424 [INFO] app.app: cwd = /app
+2025-11-16 16:48:17,424 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 16:48:17,424 [INFO] app.app: PATH EXIST ?True
+2025-11-16 16:48:17,426 [INFO] app.app: Dashboard username configuré: azerty
+2025-11-16 16:48:17,426 [INFO] app.app: Dashboard password configuré: azerty
+2025-11-16 16:48:17,640 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 16:48:17,640 [INFO] app.app: Input model_height : 224
+2025-11-16 16:48:17,640 [INFO] app.app: Input model_width : 224
+2025-11-16 16:48:18,179 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-16 17:01:13,040 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-16 17:01:18,677 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-16 17:01:18,722 [INFO] app.app: cwd = /app
+2025-11-16 17:01:18,722 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-16 17:01:18,723 [INFO] app.app: PATH EXIST ?True
+2025-11-16 17:01:18,725 [INFO] app.app: Dashboard username configuré: azerty
+2025-11-16 17:01:18,725 [INFO] app.app: Dashboard password configuré: azerty
+2025-11-16 17:01:18,871 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-16 17:01:18,872 [INFO] app.app: Input model_height : 224
+2025-11-16 17:01:18,872 [INFO] app.app: Input model_width : 224
+2025-11-16 17:01:19,663 [INFO] apscheduler.scheduler: Scheduler started
