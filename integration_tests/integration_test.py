@@ -68,7 +68,7 @@ def test_2_ctn_network():
         capture_output=True,
         text=True
     )
-    print("Voici le résutat du ls:", result.stdout)
+    print("Voici le résutat du ls:\n", result.stdout)
 
     result2 = subprocess.run(
         [
@@ -89,7 +89,7 @@ def test_2_ctn_network():
         capture_output=True,
         text=True
     )
-    print("Voici le résutat du ls app:", result4.stdout)
+    print("Voici le résutat du ls app:\n", result4.stdout)
 
     result5 = subprocess.run(
     ["docker", "exec", "-i", "flask_app", "printenv", "POSTGRES_PASSWORD"],
@@ -106,17 +106,7 @@ def test_2_ctn_network():
     capture_output=True,
     text=True
     )
-    print("Voici les résultats de get_databases():", str(result6.stderr))
+    print("Voici les résultats de get_databases():\n", str(result6.stderr)[-234:-170], str(result6.stderr)[-145:-50])
     print("Return code:", result6.returncode)
 
     assert result.returncode == 0
-
-
-    
-# # S'assurer que le bug de format ne se répète plus et soit bien adapté à celui attendu par keras
-# def test_format_img_():
-#     n1 = random.randint(1, 1000)
-#     n2 = random.randint(1, 1000)
-#     dummy_img = Image.new("RGB", (n1, n2), color="red")
-#     arr = preprocess_from_pil(dummy_img)
-#     assert arr.shape == (1, 224, 224, 3)
