@@ -96,10 +96,7 @@ def test_2_ctn_network():
     capture_output=True,
     text=True
     )
-    print("Voici les résultats de printenv POSTGRES_PASSWORD:")
-    print("STDOUT:", result5.stdout)
-    print("STDERR:", result5.stderr)
-    print("Return code:", result5.returncode)
+    print("Return code de la récupération du mot de passe PGSQL :", result5.returncode)
 
     result6 = subprocess.run(
     [
@@ -109,9 +106,7 @@ def test_2_ctn_network():
     capture_output=True,
     text=True
     )
-    print("Voici les résultats de get_databases():")
-    print("STDOUT:", result6.stdout)
-    print("STDERR:", result6.stderr)
+    print("Voici les résultats de get_databases():", str(result6.stderr))
     print("Return code:", result6.returncode)
 
     assert result.returncode == 0
