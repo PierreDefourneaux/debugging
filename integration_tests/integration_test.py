@@ -57,46 +57,46 @@ def test_flask_app_in_its_ctn():
 
 def test_2_ctn_network():
     """Vérifie que l'API depuis son propre conteneur comumnique avec PGSQL dans le sien ."""
-    result = subprocess.run(
-        [
-            "docker",
-            "exec",
-            "-i",
-            "flask_app",
-            "ls"
-        ],
-        capture_output=True,
-        text=True
-    )
+    # result = subprocess.run(
+    #     [
+    #         "docker",
+    #         "exec",
+    #         "-i",
+    #         "flask_app",
+    #         "ls"
+    #     ],
+    #     capture_output=True,
+    #     text=True
+    # )
     # print("Voici le résutat du ls:\n", result.stdout)
 
-    result2 = subprocess.run(
-        [
-            "docker",
-            "exec",
-            "-i",
-            "flask_app",
-            "python",
-            "--version",
-        ],
-        capture_output=True,
-        text=True
-    )
+    # result2 = subprocess.run(
+    #     [
+    #         "docker",
+    #         "exec",
+    #         "-i",
+    #         "flask_app",
+    #         "python",
+    #         "--version",
+    #     ],
+    #     capture_output=True,
+    #     text=True
+    # )
     # print("Voici le résutat du python --version:", result2.stdout)
 
-    result4 = subprocess.run(
-        ["docker", "exec", "-i", "flask_app", "ls", "app"],
-        capture_output=True,
-        text=True
-    )
+    # result4 = subprocess.run(
+    #     ["docker", "exec", "-i", "flask_app", "ls", "app"],
+    #     capture_output=True,
+    #     text=True
+    # )
     # print("Voici le résutat du ls app:\n", result4.stdout)
 
-    result5 = subprocess.run(
-    ["docker", "exec", "-i", "flask_app", "printenv", "POSTGRES_PASSWORD"],
-    capture_output=True,
-    text=True
-    )
-    print("Return code de la récupération du mot de passe PGSQL :", result5.returncode)
+    # result5 = subprocess.run(
+    # ["docker", "exec", "-i", "flask_app", "printenv", "POSTGRES_PASSWORD"],
+    # capture_output=True,
+    # text=True
+    # )
+    # print("Return code de la récupération du mot de passe PGSQL :", result5.returncode)
 
     result6 = subprocess.run(
     [
@@ -107,6 +107,6 @@ def test_2_ctn_network():
     text=True
     )
     print("Voici les résultats de get_databases():\n", str(result6.stderr)[-235:-170], str(result6.stderr)[-146:-84])
-    print("Return code:", result6.returncode)
+    # print("Return code:", result6.returncode)
 
-    assert result.returncode == 0
+    assert str(result6.stderr)[-146:-84] == "[INFO] app.app: Base récupérée dans le SGBD POSTGRESQL :pierre"
