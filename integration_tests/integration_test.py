@@ -106,7 +106,7 @@ def test_2_ctn_network():
     capture_output=True,
     text=True
     )
-    print("Voici les résultats de get_databases():\n", str(result6.stderr)[-235:-170], str(result6.stderr)[-146:-85])
+    print("Voici les résultats de get_databases():\n", str(result6.stderr)[-235:-170], str(result6.stderr)[-146:-84])
     print("Return code:", result6.returncode)
 
     assert result.returncode == 0
