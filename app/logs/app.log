@@ -3595,3 +3595,13 @@ TypeError: 'NoneType' object is not subscriptable
 2025-11-16 17:01:18,872 [INFO] app.app: Input model_height : 224
 2025-11-16 17:01:18,872 [INFO] app.app: Input model_width : 224
 2025-11-16 17:01:19,663 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-20 14:23:50,009 [INFO] app.app: cwd pour savoir comment atteindre le config file cfg :/app
+2025-11-20 14:23:50,108 [INFO] app.app: cwd = /app
+2025-11-20 14:23:50,108 [INFO] app.app: os.listdir('.') = ['env_debug', 'integration_tests', 'docker-compose.yml', 'Dockerfile', 'init.sql', 'images_to_test', '.gitignore', 'app', '.github', 'debug.ipynb', '.pytest_cache', 'tests_unitaires', '.dockerignore', 'essai_file.py', '.git', 'config.cfg', 'flask_monitoringdashboard.db', '.env']
+2025-11-20 14:23:50,109 [INFO] app.app: PATH EXIST ?True
+2025-11-20 14:23:50,112 [INFO] app.app: Dashboard username configuré: azerty
+2025-11-20 14:23:50,112 [INFO] app.app: Dashboard password configuré: azerty
+2025-11-20 14:23:50,422 [INFO] app.app: model_input_shape : (None, 224, 224, 3)
+2025-11-20 14:23:50,423 [INFO] app.app: Input model_height : 224
+2025-11-20 14:23:50,423 [INFO] app.app: Input model_width : 224
+2025-11-20 14:23:51,315 [INFO] apscheduler.scheduler: Scheduler started
